@@ -1,0 +1,122 @@
+body {
+    /* background : linear-gradient( 45deg,rgb(230, 230, 230) , rgb(206, 210, 224) ) ;  */
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 90%;
+    background-color: white;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: -5px -10px 15px rgb(226, 226, 226),
+    5px 10px 15px rgb(165, 165, 165);
+}
+
+.sidebar-menu {
+    width: 15%;
+    border-radius: 15px 0 0 15px;
+    height: auto;
+    border-right: 1px solid rgba(0, 0, 0, 0.205);
+}
+/* ava set */
+.ava-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    height: 200px;
+    line-height: 0.6;
+    margin-bottom: 30px;
+}
+
+.ava-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.nick-name {
+    font-size: 18px;
+}
+
+.real-name {
+    margin-bottom: 0.5px;
+    font-size: 18px;
+}
+
+/* menu options */
+.menu-element {
+    height: 50px;
+    width: 100%;
+    color:#a93f48 ;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-element h3 {
+    margin-left: 20px;
+    text-transform: uppercase;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-element svg {
+    width: 21px;
+    margin-left: 35px;
+    fill: rgb(153, 152, 152);
+}
+
+.menu-element:hover {
+    background-color: #a93f48;
+    border-radius: 15px;
+    color: white ;
+    box-shadow: -5px -10px 15px rgb(212, 212, 212),
+    5px 10px 15px rgb(158, 158, 158);
+    transition: .4s;
+}
+
+.menu-elements-conatainer {
+    padding-bottom: 75px;
+}
+
+
+.pp {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(153, 152, 152);
+}
+
+.ll {
+    font-size: 22px;
+    font-weight: bold;
+    color: #852931;
+}
+
+
+
+.an {
+    height: 200px;
+    width: 200px;
+    background-color: #a93f48 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lo {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: -5px -10px 15px #a7353e,
+    5px 10px 15px #7a2027cb;
+
+}
