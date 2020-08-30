@@ -1,0 +1,149 @@
+#body {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 60px;
+  margin-left:400px ;
+}
+
+#searchBar {
+  width: 900px;
+  height: 45px;
+
+}
+
+/* #search {
+  outline-color: darkblue;
+  outline-width: 1px;
+  width: 800px;
+}
+#searchIconAdjust{
+  display: flex;
+  width: 50px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(238, 227, 227, 0.308);
+  outline-width: 1px;
+  outline-color: darkblue;
+}*/
+#searchIcon {
+  width: 20px;
+  height: 20px;
+  
+} 
+
+#button-addon2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myPlaylist {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#playlistAndButton {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  align-items: center;
+}
+
+#playlists {
+  display: flex;
+  padding-right: 10px;
+}
+
+.playlist {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex-flow: column;
+}
+
+.playlistCover {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.line {
+  outline-width: 1px;
+  width: 900px;
+}
+
+#mySong {
+  display: flex;
+  width: 900px;
+}
+
+#savedSong {
+  width: 600px;
+  display: flex;
+  flex-flow: column;
+}
+
+#musicAndSort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+}
+
+#shuffleAll {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  width: 580px;
+  margin: 10px;
+  height: 50px;
+}
+#shuffleIcon {
+  width: 40px;height: 40px;
+  margin-right: 12px;
+}
+
+#songs {
+  display: flex;
+  flex-flow: column;
+  width: 600px;
+  
+  
+}
+
+.song {
+  width: 580px;
+  height: 50px;
+  display: flex;
+align-items: center;
+
+}
+
+.songCover {
+  width: 40px;
+  height: 40px;
+  margin:10;
+  border-radius: 5px;
+margin: 20px;
+}
+
+.songIn4 {
+  display: flex;
+  flex-flow: column;
+}
+
+.songArtist {
+  font-size: 10px;
+}
+
+#recommended {
+  width: 290px;
+  display: flex;
+  flex-flow: column;
+  margin-left: 10px ;
+  border-left: 1px solid rgba(206, 205, 205, 0.719);
+  padding-left: 10px;
+}
