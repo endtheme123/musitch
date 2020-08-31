@@ -70,6 +70,7 @@ body {
     margin-top: 60px;
     border-right: 1px solid rgba(0, 0, 0, 0.205);
 }
+
 /* ava set */
 .ava-set {
     display: flex;
@@ -78,7 +79,6 @@ body {
     padding-top: 40px;
     height: 200px;
     line-height: 0.6;
-    /* margin-bottom: 10px; */
 }
 
 .ava-set img {
@@ -127,7 +127,7 @@ body {
     color: white ;
     /* box-shadow: -5px -8px 10px rgba(211, 211, 211, 0.733),
     5px 8px 10px rgba(187, 187, 187, 0.747);  */
-    box-shadow: -10px -10px 15px rgb(228, 228, 228),
+    box-shadow: -10px -10px 10px rgb(228, 228, 228),
     10px 10px 15px rgba(70, 70, 70, 0.144); 
     transition: .4s;
 }
@@ -138,7 +138,7 @@ body {
     color: white ;
     /* box-shadow: -5px -8px 10px rgba(211, 211, 211, 0.733),
     5px 8px 10px rgba(187, 186, 186, 0.747);  */
-    box-shadow: -10px -10px 15px rgb(228, 228, 228),
+    box-shadow: -10px -10px 10px rgb(228, 228, 228),
     10px 10px 15px rgba(70, 70, 70, 0.144); 
 }
 
@@ -192,17 +192,33 @@ body {
 .seeall-playlist-info-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 65%;
     height: 280px;
     margin-right: 50px;
-    background-color: lightblue;
     line-height: 1.;
 }
 
 .seeall-playlist-name {
     font-size: 35px;
     font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 0;
+    color: #1d2129;
     
+}
+
+.seeall-playlist-songs-number {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #6b6b6b;
+}
+
+.seeall-playlist-description {
+    font-size: 20px;
+    color: #1d2129;
+    margin: 0;
 }
 
 
@@ -218,7 +234,6 @@ body {
     flex-direction: column;
     color: #1d2129;
     align-items: center;
-    /* padding-top: 30px; */
     border-radius: 15px;
     background-color: #f8f8f8;
     box-shadow: -10px -10px 15px rgb(255, 255, 255),
@@ -237,8 +252,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* padding-right: 20px;
-    padding-left: 50px; */
     margin-bottom: 70px;
 }
 
@@ -251,12 +264,15 @@ body {
 }
 
 .seeall-song-name {
-    /* color: #1d2129; */
     font-size: 20px;
     font-weight: bold;
+    color: #1d2129;
+    margin-bottom: 0;
 }
 
 .seeall-singer {
-    color: #8a8a8a;
+    color: #6b6b6b;
     font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
