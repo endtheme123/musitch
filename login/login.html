@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="login.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body class="bodyPage">
+		<div class="body">
+			<p id="chữ">Musitch</p>
+
+			<button
+				style="cursor: pointer"
+				class="buttonĐN"
+				class="btn btn-primary"
+				data-toggle="modal"
+				data-target="#myModal_login"
+			>
+				Đăng nhập
+			</button>
+
+			<div class="modal fade" id="myModal_login" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								&times;
+							</button>
+							<h4 class="modal-title"></h4>
+						</div>
+						<div class="modal-body">
+							<h3 class="modal-body-text">Đăng nhập</h3>
+
+							<div class="information">
+								<div class="infor_content">Email:</div>
+								<input
+									id="email"
+									type="email"
+									placeholder="Nhập địa chỉ email của bạn"
+								/>
+							</div>
+
+							<div class="information">
+								<div class="infor_content">Mật khẩu:</div>
+								<input id="pass" type="password" placeholder="Nhập mật khẩu" />
+							</div>
+
+							<div id="btn_Đk">
+								<button id="btn_Đn_chữ">Đăng nhập</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- //////////// -->
+
+			<button
+				style="cursor: pointer"
+				class="buttonĐK"
+				data-toggle="modal"
+				data-target="#myModal"
+			>
+				Đăng ký
+			</button>
+
+			<!--/////////// -->
+			<a style="cursor: help" id="chữ2" href="">Điều khoản sử dụng</a>
+			<!--/////////// -->
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								&times;
+							</button>
+							<h4 class="modal-title"></h4>
+						</div>
+						<!-- quan trọng!!!!!!!!!!!!!!!!!!!!!! -->
+						<div class="modal-body">
+							<h3 class="modal-body-text">Đăng ký tài khoản</h3>
+							<div class="information">
+								<div class="infor_content">Họ và tên:</div>
+								<input
+									id="name"
+									type="text"
+									placeholder="Nhập họ và tên của bạn"
+								/>
+							</div>
+
+							<div class="information">
+								<div class="infor_content">(*) Tên tài khoản:</div>
+								<input
+									id="nick_name"
+									type="text"
+									placeholder="Tên tài khoản không quá 15 chữ"
+									pattern="{15}"
+									autocomplete="on"
+								/>
+							</div>
+
+							<div class="information">
+								<div class="infor_content">(*) Email:</div>
+								<input
+									id="email"
+									type="email"
+									placeholder="Nhập địa chỉ email của bạn"
+								/>
+							</div>
+
+							<div class="information">
+								<div class="infor_content">Số điện thoại:</div>
+								<input
+									id="phone_number"
+									type="number"
+									placeholder="Nhập số điện thoại của bạn"
+								/>
+							</div>
+
+							<div class="information">
+								<div class="infor_content">(*) Mật khẩu:</div>
+								<input id="pass" type="password" placeholder="Nhập mật khẩu" />
+							</div>
+
+							<div class="information">
+								<div class="infor_content">(*) Xác nhận mật khẩu:</div>
+								<input type="password" placeholder="Nhập lại mật khẩu" />
+							</div>
+
+							<div class="information">
+								<div class="infor_content">(*) Ngày sinh nhật:</div>
+								<input id="birthday" type="date" />
+							</div>
+
+							<div id="sexx" class="information">
+								<div class="infor_content">(*) Giới tính:</div>
+								<div id="sex">
+									<input type="radio" name="gioitinh" />Nữ
+									<input type="radio" name="gioitinh" />Nam
+									<input type="radio" name="gioitinh" />Khác
+								</div>
+							</div>
+
+							<div class="điều_khoản">
+								<input type="checkbox" /> Tôi đồng ý với điều khoản sử dụng
+							</div>
+
+							<div id="btn_Đk">
+								<button id="btn_Đk_chữ">Đăng ký ngay</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="iMG">
+				<button id="img1"></button>
+				<button id="img2"></button>
+			</div>
+
+		</div>
+
+		<!-- //////////// -->
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+		<script src="login.js"></script>
+	</body>
+</html>

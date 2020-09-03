@@ -264,23 +264,23 @@ body {
 
 /* profile-buttons */
 .profile-buttons {
-    height: 100px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 70px;
     justify-content: center;
     /* margin-bottom: 50px; */
 }
 
 .profile-photos-button {
     height: 45px;
-    width: auto;
+    width: 110px;
     background-color: #F8F8F8;
-    padding-left: 25px;
-    padding-right: 25px;
     border-radius: 15px;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     font-size: 17px;
     box-shadow: -10px -10px 15px rgb(255, 255, 255),
@@ -300,17 +300,15 @@ body {
 
 .profile-music-playlists-button {
     height: 45px;
-    width: auto;
+    width: 110px;
     background-color: #F8F8F8;
-    padding-left: 25px;
-    padding-right: 25px;
     display: flex;
     color: #1d2129;
     align-items: center;
+    justify-content: center;
     font-size: 17px;
     text-decoration: none;
     border-radius: 15px;
-    /* margin-top: 40px; */
     margin-right: 20px;
     box-shadow: -10px -10px 15px rgb(255, 255, 255),
     10px 10px 15px rgba(70, 70, 70, 0.12); 
@@ -322,7 +320,6 @@ body {
     color: white ;
     box-shadow: -10px -10px 15px rgb(255, 255, 255),
     10px 10px 15px rgba(70, 70, 70, 0.178); 
-    /* transition: .4s; */
     font-size: 17px;
 }
 
