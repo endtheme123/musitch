@@ -1,7 +1,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     width: 100%;
-    background-color: #d1d1d148 ;
+    background-color: #cccccc41 ;
     height: 900px;
     display: flex;
     flex-direction: column;
@@ -127,8 +127,8 @@ body {
     color: white ;
     /* box-shadow: -5px -8px 10px rgba(211, 211, 211, 0.733),
     5px 8px 10px rgba(187, 187, 187, 0.747);  */
-    box-shadow: -10px -10px 15px rgb(228, 228, 228),
-    10px 10px 15px rgba(70, 70, 70, 0.144); 
+    box-shadow: -3px -5px 10px rgb(228, 228, 228),
+    3px 5px 10px rgba(70, 70, 70, 0.281);  
     transition: .4s;
 }
 
@@ -138,8 +138,8 @@ body {
     color: white ;
     /* box-shadow: -5px -8px 10px rgba(211, 211, 211, 0.733),
     5px 8px 10px rgba(187, 186, 186, 0.747);  */
-    box-shadow: -10px -10px 15px rgb(228, 228, 228),
-    10px 10px 15px rgba(70, 70, 70, 0.144); 
+    box-shadow: -3px -5px 10px rgb(228, 228, 228),
+    3px 5px 10px rgba(70, 70, 70, 0.281); 
 }
 
 .menu-elements-conatainer {
@@ -172,7 +172,7 @@ body {
    padding-top: 30px;
    margin-bottom: 70px;
    background-color: #f8f8f8;
-   box-shadow: -10px -10px 15px rgb(255, 255, 255),
+   box-shadow: -10px -10px 19px rgb(255, 255, 255),
    10px 10px 15px rgba(70, 70, 70, 0.178); 
 }
 
