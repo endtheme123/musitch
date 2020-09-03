@@ -1,7 +1,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     width: 100%;
-    background-color: #d1d1d148 ;
+    background-color: #ababab23 ;
     height: 900px;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 5px 8px 10px #d3d3d3ad;
+    /* box-shadow: 5px 8px 10px #d3d3d3ad; */
     background-color: #aa444d;
 
 }
@@ -68,9 +68,9 @@ body {
     left: 0;
     top: 0;
     margin-top: 60px;
-    border-right: 1px solid rgba(0, 0, 0, 0.205);
+    box-shadow: 3px 0px 10px rgba(70, 70, 70, 0.057);
+    
 }
-
 /* ava set */
 .ava-set {
     display: flex;
@@ -125,9 +125,7 @@ body {
     background-color: #a93f48;
     border-radius: 15px;
     color: white ;
-    /* box-shadow: -5px -8px 10px rgba(211, 211, 211, 0.733),
-    5px 8px 10px rgba(187, 187, 187, 0.747);  */
-    box-shadow: -10px -10px 10px rgb(228, 228, 228),
+    box-shadow: -5px -8px 10px rgba(228, 228, 228, 0.495),
     10px 10px 15px rgba(70, 70, 70, 0.144); 
     transition: .4s;
 }
@@ -136,14 +134,28 @@ body {
     background-color: #a93f48;
     border-radius: 15px;
     color: white ;
-    /* box-shadow: -5px -8px 10px rgba(211, 211, 211, 0.733),
-    5px 8px 10px rgba(187, 186, 186, 0.747);  */
-    box-shadow: -10px -10px 10px rgb(228, 228, 228),
+    /* box-shadow: -10px -10px 15px rgb(228, 228, 228),
+    10px 10px 15px rgba(70, 70, 70, 0.144);  */
+    box-shadow: -5px -8px 10px rgba(228, 228, 228, 0.495),
     10px 10px 15px rgba(70, 70, 70, 0.144); 
 }
 
 .menu-elements-conatainer {
     padding-bottom: 25px;
+}
+
+/* content */
+.content {
+    width: 85%;
+    margin-left: 15%;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+    padding-top: 20px;
+     
 }
 
 /* content */
@@ -216,8 +228,8 @@ body {
 }
 
 .seeall-playlist-description {
-    font-size: 20px;
-    color: #1d2129;
+    font-size: 18px;
+    color: #1d2129db;
     margin: 0;
 }
 
@@ -244,8 +256,6 @@ body {
     box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.952),
     10px 10px 15px rgba(70, 70, 70, 0.301); 
     transition: .4s;
-    /* background-color: #a93f48;
-    color: #f8f8f8; */
 }
 
 .three-cards {
@@ -256,11 +266,10 @@ body {
 }
 
 .song-card img {
-    width: 200px;
-    height: 200px;
-    margin-top: 30px;
+    width: 100%;
+    height: 250px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
 }
 
 .seeall-song-name {
@@ -268,11 +277,13 @@ body {
     font-weight: bold;
     color: #1d2129;
     margin-bottom: 0;
+    margin-top: 20px;
 }
 
 .seeall-singer {
     color: #6b6b6b;
     font-size: 17px;
-    margin-top: 15px;
+    margin-top: 0;
+    margin-top: 5px;
     margin-bottom: 20px;
 }
