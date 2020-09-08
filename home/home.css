@@ -1,16 +1,18 @@
 
-    body {
+     body {
         font-family: 'Nunito', sans-serif;
         width: 100%;
-        background-color: #F8F8F8;
-        height: 900px;
+        background-color: #E4E4E9;
+        /* height: 900px; */
         display: flex;
         flex-direction: row;
         margin: 0px;
+
     }
     
     .sidebar-menu {
         /* width: 270px; */
+        background-color: #F8F8F8;
         width: 17%;
         height: 900px;
         position: fixed;
@@ -25,6 +27,11 @@
         height: 200px;
         line-height: 0.6;
         margin-bottom: 30px;
+
+    }
+    
+    .ava-set h4{
+        color:#3F3D40;
     }
     
     .ava-img {
@@ -85,6 +92,10 @@
         padding-bottom: 25px;
     }
     
+    .menu-elements-conatainer h3{
+        color: #3F3D40;
+    }
+
     .content {
         width: 20%;
         /* margin-left: 17%; */
@@ -136,24 +147,37 @@
         flex-flow: column;
         /* margin-right:2000px ; */
         padding-top: 50px;
+        background-color: #E4E4E9;
+        padding-left: 150px;
+        padding-right: 8px;
         
         
     }
-    
+
     #title {
         display: flex;
         justify-content: space-between;
-        width: 900px;
+        width: 1260px;
         align-items: center;
     }
     
+    #title h2{
+        color:#3F3D40;
+    
+    }
+
     #music {
         display: flex;
-        
-        background-color: #a93f48;
+        justify-content: space-evenly;
+        background-color: white;
         border-radius: 27px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     
+
+    
+
     .song {
         display: flex;
         align-items: center;
@@ -164,6 +188,7 @@
     .song h3 {
         margin-top:5px;
         margin-bottom: 0px;
+        color: #3F3D40;
     }
     
     .song img {
@@ -181,52 +206,41 @@
     #others {
         display: flex;
         flex-flow: column;
-        
-        width: 360px;
-        
-        
-        
+        background-color: white;
+        /* width: 360px; */
+        margin-top: 30px;
+        border-radius: 28px;
+        /* margin-left : 0px; */
+        }
     
-    }
     
-    #songs {
-        width: 600px;
-        display: flex;
-        flex-flow: column;
-    }
     
     #musicAndMore {
         display: flex;
       
       align-items: center;
-      width: 600px;
+      /* width: 600px; */
     }
     
     #musicAndMore h2 {
-        margin-right: 200px;
+        color: #3F3D40;
     }
     
     #lotOfSongs {
         display: flex;
       flex-flow: column;
-      width: 600px;
+      /* width: 600px; */
     
     }
     
     .soong{
-        width: 200px;
-        background-color: #a93f48;
+        width: 350px;
+        
       display: flex;
+      
     align-items: center;
         border-radius: 27px;
         margin: 5px;
-    }
-    
-    .soong svg {
-        width: 20px;
-        padding-left: 300px;
-        padding-bottom: 10px ;
-        
     }
     
     .soong img {
@@ -236,11 +250,60 @@
         border-radius: 26px;
     } 
     
-    #hobbies {
-        display: inline;
-        /* width: 340px; */
+    .soong h3 {
+        margin-top :0px;
+        margin-bottom: 0px;
+        color: #3F3D40;
     }
     
+
+    
+
+    .soong h6 {
+        font-size: 10px;
+        color: #C0BFC8;
+        margin-top: 6px;
+        margin-bottom: 0px;
+    }
+    
+    .soong h7 {
+        font-size: 10px;
+        color: #C0BFC8;
+        
+        
+    }
+
+    #hAvx {
+        margin-top: 30px;
+        
+    }
+    
+    #hobbies {
+        /* display: inline; */
+        width: 420px;
+        background-color: white;
+        border-radius: 28px;
+        padding-top :1px;
+        margin-left: 5px;
+    }
+    
+    #hobbies h2{
+        color: #3F3D40;
+    }
+
+    #hobbies h4 {
+        color: #3F3D40;
+    }
+
+    #hobbies p {
+        color: #3F3D40;
+    }
+    
+    #hobbies img {
+        width: 50px;
+
+    }
+
     .hobby {
         /* display: flex;
         background-color: #a93f48; */
@@ -249,18 +312,25 @@
         /* padding: 20px; */
     
     }
-    .hobby svg {
-        width: 20px;   
-        padding-left: 20px; 
     
-    } 
+    #request {
+        margin-top: 30px;
+        border-radius: 28px;
+        background-color: white;
+        width: 250px;
+    }
+
+    #request h2{
+        color:#3F3D40;
+    }
     
-    
-    
-    
+    #request h3{
+        color:#3F3D40;
+    }
+
     .person {
         display: flex;
-        background-color: #a93f48;
+        
         border-radius: 26px;
         margin: 10px;
     
@@ -276,7 +346,7 @@
     }
     
     .person h3 {
-        margin-top: 13px;
+        margin-top: 14px;
         margin-bottom: 0px;
     }
     
@@ -291,11 +361,21 @@
     
     .v {
         fill: green;
-        padding-right: 200px;
+        border-radius: 28px;
+        background-color: white;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
     
     .x {
         fill: red;
-        padding-right: 200px;
+        border-radius: 28px;
+        background-color: white;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
     
