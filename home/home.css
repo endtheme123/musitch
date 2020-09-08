@@ -194,7 +194,7 @@
     .song img {
         width: 150px;
         height: 150px;
-        border-radius: 10px;
+        border-radius: 15px;
         object-fit: cover;
     }
     
@@ -248,7 +248,7 @@
         height: 50px;
         width: 50px;
         margin-right: 20px;
-        border-radius: 26px;
+        border-radius: 5px;
     } 
     
     .soong h3 {
