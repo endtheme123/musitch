@@ -1,7 +1,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     width: 100%;
-    background-color: #cccccc41 ;
+    background-color: #ababab23 ;
     height: 900px;
     display: flex;
     flex-direction: column;
@@ -17,22 +17,15 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 5px 8px 10px #d3d3d3ad;
     background-color: #aa444d;
 
 }
 
-
-.message-icon {
-    fill:#d8d8d8;
-    margin-left: 20px;
-    width: 24.5px;
-}
-
-.noti-icon {
-    margin-left: 40px;
-    fill:#d8d8d8 ;
-    width: 27px;
+.menu-playing-music {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 370px;
 }
 
 .fixed-top-menu input {
@@ -40,18 +33,144 @@ body {
     height: 28px;
     border-radius: 15px;
     border-width: 0;
-    margin-left: 60%;
+    margin-left: 12%;
     padding-left: 30px;
     color: #6b6b6b ;
     outline: none;
+    margin-right: 40px;
 }
 
 .fixed-top-menu input:focus{
     box-shadow: -5px -8px 15px #ad474f8a,
     5px 8px 15px #83333a9a;  
     transition: .4s;
-
 }
+
+.menu-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.noti-icon {
+    fill:#d8d8d8 ;
+    width: 26px;
+}
+
+.menu-icon:hover .noti-icon{
+    fill: #ffffff; 
+    transition: 0.4s;
+}
+
+.message-icon {
+    fill:#d8d8d8;
+    width: 24.5px;
+}
+
+.menu-icon:hover .message-icon{
+    fill: #ffffff; 
+    transition: 0.4s;
+}
+
+.menu-playing-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    width: auto;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+
+.previous-song-icon{
+    fill:#d8d8d8 ;
+    width: 25px;
+}
+
+.menu-playing-icon:hover .previous-song-icon {
+    fill: #ffffff; 
+    transition: 0.4s;
+}
+
+.stop-icon {
+    fill:#d8d8d8 ;
+    width: 27px;
+    /* margin-left: 8px; */
+}
+
+.menu-playing-icon:hover .stop-icon {
+    fill: #ffffff; 
+    transition: 0.4s;
+}
+
+.play-icon {
+    fill:#d8d8d8 ;
+    width: 27px;
+    /* margin-left: 8px; */
+}
+
+.menu-playing-icon:hover .play-icon {
+    fill: #ffffff; 
+    transition: 0.4s;
+}
+
+.next-song-icon {
+    /* margin-left: 8px; */
+    fill:#d8d8d8 ;
+    width: 25px;
+}
+
+.menu-playing-icon:hover .next-song-icon {
+    fill: #ffffff; 
+    transition: 0.4s;
+}
+
+.playing-song-img {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    border : 1.5px solid #d8d8d8;
+    margin-left: 40px;
+}
+
+.playing-song-info {
+    height: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    cursor: pointer;
+    color: #d8d8d8;
+}
+
+.playing-song-info:hover {
+    color: #ffffff;
+    transition: .4s;
+}
+
+.playing-song-name {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.playing-singer {
+    font-size: 11px;
+    margin-left: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
 
 /* conatiner */
 .container {
@@ -68,7 +187,8 @@ body {
     left: 0;
     top: 0;
     margin-top: 60px;
-    border-right: 1px solid rgba(0, 0, 0, 0.205);
+    box-shadow: 3px 0px 10px rgba(70, 70, 70, 0.057);
+    
 }
 /* ava set */
 .ava-set {
@@ -78,7 +198,6 @@ body {
     padding-top: 40px;
     height: 200px;
     line-height: 0.6;
-    /* margin-bottom: 10px; */
 }
 
 .ava-set img {
@@ -106,7 +225,10 @@ body {
     margin-top: 11px;
 }
 
-
+.menu-element:hover .menu-element-icon svg {
+    transition: .4s;
+    fill: #ffffff;
+}
 
 .menu-element h3 {
     margin-left: 20px;
@@ -121,14 +243,13 @@ body {
     fill: rgb(153, 152, 152);
 }
 
+
 .menu-element:hover {
     background-color: #a93f48;
     border-radius: 15px;
     color: white ;
-    /* box-shadow: -5px -8px 10px rgba(211, 211, 211, 0.733),
-    5px 8px 10px rgba(187, 187, 187, 0.747);  */
-    box-shadow: -3px -5px 10px rgb(228, 228, 228),
-    3px 5px 10px rgba(70, 70, 70, 0.281);  
+    box-shadow: -5px -8px 10px rgba(228, 228, 228, 0.495),
+    10px 10px 15px rgba(70, 70, 70, 0.144); 
     transition: .4s;
 }
 
@@ -136,10 +257,14 @@ body {
     background-color: #a93f48;
     border-radius: 15px;
     color: white ;
-    /* box-shadow: -5px -8px 10px rgba(211, 211, 211, 0.733),
-    5px 8px 10px rgba(187, 186, 186, 0.747);  */
-    box-shadow: -3px -5px 10px rgb(228, 228, 228),
-    3px 5px 10px rgba(70, 70, 70, 0.281); 
+    /* box-shadow: -10px -10px 15px rgb(228, 228, 228),
+    10px 10px 15px rgba(70, 70, 70, 0.144);  */
+    box-shadow: -5px -8px 10px rgba(228, 228, 228, 0.495),
+    10px 10px 15px rgba(70, 70, 70, 0.144); 
+}
+
+.active svg {
+    fill: #ffffff;
 }
 
 .menu-elements-conatainer {
@@ -206,19 +331,21 @@ body {
     font-size: 17px;
     color: #1d2129;
     margin-left: 31%;
-    /* padding-left: -50px; */
+    margin-top: 25px;
     font-weight: bold;
 }
 
 .nick-name {
     font-size: 25px;
     color: #1d2129;
+    margin-top: 20px;
+    margin-bottom: 0;
     margin-left: 34%;
 }
 
 .profile-info{
     display: flex;
-    width: 51%;
+    width: 60%;
     flex-direction: column;
     /* justify-content: center; */
 }
@@ -226,8 +353,8 @@ body {
 .profile-personal-info {
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
-    margin-top:50px;
+    margin-left: 100px;
+    margin-top: 50px;
 }
 
 .profile-personal-info-content {
@@ -240,7 +367,7 @@ body {
 }
 
 .age-and-gender{
-    margin-right: 180px;
+    margin-right: 100px;
 }
 
 .info-question{
@@ -257,8 +384,10 @@ body {
 }
 
 .bio{
-    margin-top: 50px;
-    margin-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin: 0;
+    margin-left: 100px;
     color: #1d2129 ;
 }
 
@@ -268,7 +397,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 70px;
+    margin-bottom: 25px;
     justify-content: center;
     /* margin-bottom: 50px; */
 }
@@ -289,14 +418,14 @@ body {
     font-weight: bold;
 }
 
-.profile-photos-button:hover {
+/* .profile-photos-button:hover {
     background-color: #a93f48;
     color: white ;
     box-shadow: -10px -10px 15px rgb(255, 255, 255),
     10px 10px 15px rgba(70, 70, 70, 0.178); 
     transition: .4s;
     font-size: 17px;
-}
+} */
 
 .profile-music-playlists-button {
     height: 45px;
@@ -323,14 +452,14 @@ body {
     font-size: 17px;
 }
 
-.profile-music-playlists-button:hover {
+/* .profile-music-playlists-button:hover {
     background-color: #a93f48;
     color: white ;
     box-shadow: -10px -10px 15px rgb(255, 255, 255),
     10px 10px 15px rgba(70, 70, 70, 0.178); 
     transition: .4s;
     font-size: 17px;
-}
+} */
 
 
 
@@ -385,7 +514,7 @@ body {
 .see-all-set a {
     text-decoration: none;
     color: #6b6b6b;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -443,6 +572,7 @@ body {
     flex-direction: row;
     align-items: center;
      color: #1d2129;
+     cursor: pointer;
 }
 
 .song:hover {

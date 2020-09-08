@@ -1,7 +1,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     width: 100%;
-    background-color: #d1d1d148 ;
+    background-color: #ababab23 ;
     height: 900px;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 5px 8px 10px #d3d3d3ad;
+    /* box-shadow: 5px 8px 10px #d3d3d3ad; */
     background-color: #aa444d;
 
 }
@@ -68,7 +68,8 @@ body {
     left: 0;
     top: 0;
     margin-top: 60px;
-    border-right: 1px solid rgba(0, 0, 0, 0.205);
+    box-shadow: 3px 0px 10px rgba(70, 70, 70, 0.057);
+    
 }
 /* ava set */
 .ava-set {
@@ -78,7 +79,6 @@ body {
     padding-top: 40px;
     height: 200px;
     line-height: 0.6;
-    /* margin-bottom: 10px; */
 }
 
 .ava-set img {
@@ -125,9 +125,7 @@ body {
     background-color: #a93f48;
     border-radius: 15px;
     color: white ;
-    /* box-shadow: -5px -8px 10px rgba(211, 211, 211, 0.733),
-    5px 8px 10px rgba(187, 187, 187, 0.747);  */
-    box-shadow: -10px -10px 15px rgb(228, 228, 228),
+    box-shadow: -5px -8px 10px rgba(228, 228, 228, 0.495),
     10px 10px 15px rgba(70, 70, 70, 0.144); 
     transition: .4s;
 }
@@ -136,9 +134,9 @@ body {
     background-color: #a93f48;
     border-radius: 15px;
     color: white ;
-    /* box-shadow: -5px -8px 10px rgba(211, 211, 211, 0.733),
-    5px 8px 10px rgba(187, 186, 186, 0.747);  */
-    box-shadow: -10px -10px 15px rgb(228, 228, 228),
+    /* box-shadow: -10px -10px 15px rgb(228, 228, 228),
+    10px 10px 15px rgba(70, 70, 70, 0.144);  */
+    box-shadow: -5px -8px 10px rgba(228, 228, 228, 0.495),
     10px 10px 15px rgba(70, 70, 70, 0.144); 
 }
 
@@ -206,19 +204,21 @@ body {
     font-size: 17px;
     color: #1d2129;
     margin-left: 31%;
-    /* padding-left: -50px; */
+    margin-top: 25px;
     font-weight: bold;
 }
 
 .nick-name {
     font-size: 25px;
     color: #1d2129;
+    margin-top: 20px;
+    margin-bottom: 0;
     margin-left: 34%;
 }
 
 .profile-info{
     display: flex;
-    width: 51%;
+    width: 60%;
     flex-direction: column;
     /* justify-content: center; */
 }
@@ -226,8 +226,8 @@ body {
 .profile-personal-info {
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
-    margin-top:50px;
+    margin-left: 100px;
+    margin-top: 50px;
 }
 
 .profile-personal-info-content {
@@ -240,7 +240,7 @@ body {
 }
 
 .age-and-gender{
-    margin-right: 180px;
+    margin-right: 100px;
 }
 
 .info-question{
@@ -257,8 +257,10 @@ body {
 }
 
 .bio{
-    margin-top: 50px;
-    margin-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin: 0;
+    margin-left: 100px;
     color: #1d2129 ;
 }
 
@@ -268,7 +270,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
     justify-content: center;
     /* margin-bottom: 50px; */
 }
@@ -289,14 +291,14 @@ body {
     font-weight: bold;
 }
 
-.profile-photos-button:hover {
+/* .profile-photos-button:hover {
     background-color: #a93f48;
     color: white ;
     box-shadow: -10px -10px 15px rgb(255, 255, 255),
     10px 10px 15px rgba(70, 70, 70, 0.178); 
     transition: .4s;
     font-size: 17px;
-}
+} */
 
 .profile-music-playlists-button {
     height: 45px;
@@ -323,14 +325,15 @@ body {
     font-size: 17px;
 }
 
-.profile-music-playlists-button:hover {
+/* .profile-music-playlists-button:hover {
     background-color: #a93f48;
     color: white ;
     box-shadow: -10px -10px 15px rgb(255, 255, 255),
     10px 10px 15px rgba(70, 70, 70, 0.178); 
     transition: .4s;
     font-size: 17px;
-}
+} */
+
 
 
 /* photo-album */

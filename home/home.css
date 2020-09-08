@@ -1,0 +1,301 @@
+
+    body {
+        font-family: 'Nunito', sans-serif;
+        width: 100%;
+        background-color: #F8F8F8;
+        height: 900px;
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+    }
+    
+    .sidebar-menu {
+        /* width: 270px; */
+        width: 17%;
+        height: 900px;
+        position: fixed;
+        border-right: 1px solid rgba(0, 0, 0, 0.205);
+    }
+    /* ava set */
+    .ava-set {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 90px;
+        height: 200px;
+        line-height: 0.6;
+        margin-bottom: 30px;
+    }
+    
+    .ava-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    
+    .nick-name {
+        font-size: 18px;
+        color: #1d2129;
+    }
+    
+    .real-name {
+        margin-bottom: 0.5px;
+        font-size: 18px;
+        color: #1d2129;
+    }
+    
+    /* menu options */
+    .menu-element {
+        height: 50px;
+        width: 100%;
+        color:#1d2129 ;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .menu-element h3 {
+        margin-left: 20px;
+        text-transform: uppercase;
+        line-height: 50px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .menu-element svg {
+        width: 21px;
+        margin-left: 35px;
+        fill: rgb(153, 152, 152);
+    }
+    
+    .menu-element:hover {
+        background-color: #a93f48;
+        border-radius: 15px;
+        color: white ;
+        /* box-shadow: -5px -8px 20px rgb(212, 212, 212),
+        5px 8px 20px rgb(158, 158, 158); */
+        box-shadow: -5px -8px 20px rgba(211, 211, 211, 0.733),
+        5px 8px 20px rgba(179, 179, 179, 0.747); 
+        transition: .4s;
+    }
+    
+    .menu-elements-conatainer {
+        padding-bottom: 25px;
+    }
+    
+    .content {
+        width: 20%;
+        /* margin-left: 17%; */
+    }
+    
+    .fixed-top-menu {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: fixed;
+        background-color: #a93f48;
+    }
+    
+    .message-icon {
+        fill:#6b6b6b;
+        margin-left: 20px;
+        width: 27px;
+    }
+    
+    .noti-icon {
+        margin-left: 40px;
+        fill:#6b6b6b ;
+        width: 27px;
+    }
+    
+    .fixed-top-menu input {
+        width: 450px;
+        height: 30px;
+        border-radius: 15px;
+        border-width: 0;
+        margin-left: 40%;
+        padding-left: 40px;
+        color: #6b6b6b ;
+        outline: none;
+    }
+    
+    .fixed-top-menu input:focus{
+        box-shadow: -5px -8px 20px rgba(247, 246, 246, 0.733),
+        5px 8px 20px rgba(235, 235, 235, 0.747);  
+        transition: .4s;
+    
+    }
+    
+    
+    #playlists {
+        display: flex;
+        flex-flow: column;
+        /* margin-right:2000px ; */
+        padding-top: 50px;
+        
+        
+    }
+    
+    #title {
+        display: flex;
+        justify-content: space-between;
+        width: 900px;
+        align-items: center;
+    }
+    
+    #music {
+        display: flex;
+        
+        background-color: #a93f48;
+        border-radius: 27px;
+    }
+    
+    .song {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        flex-flow: column;
+    }
+    
+    .song h3 {
+        margin-top:5px;
+        margin-bottom: 0px;
+    }
+    
+    .song img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    
+    #m4in {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #others {
+        display: flex;
+        flex-flow: column;
+        
+        width: 360px;
+        
+        
+        
+    
+    }
+    
+    #songs {
+        width: 600px;
+        display: flex;
+        flex-flow: column;
+    }
+    
+    #musicAndMore {
+        display: flex;
+      
+      align-items: center;
+      width: 600px;
+    }
+    
+    #musicAndMore h2 {
+        margin-right: 200px;
+    }
+    
+    #lotOfSongs {
+        display: flex;
+      flex-flow: column;
+      width: 600px;
+    
+    }
+    
+    .soong{
+        width: 200px;
+        background-color: #a93f48;
+      display: flex;
+    align-items: center;
+        border-radius: 27px;
+        margin: 5px;
+    }
+    
+    .soong svg {
+        width: 20px;
+        padding-left: 300px;
+        padding-bottom: 10px ;
+        
+    }
+    
+    .soong img {
+        height: 50px;
+        width: 50px;
+        margin-right: 20px;
+        border-radius: 26px;
+    } 
+    
+    #hobbies {
+        display: inline;
+        /* width: 340px; */
+    }
+    
+    .hobby {
+        /* display: flex;
+        background-color: #a93f48; */
+        border-radius: 20%;
+        margin: 10px;
+        /* padding: 20px; */
+    
+    }
+    .hobby svg {
+        width: 20px;   
+        padding-left: 20px; 
+    
+    } 
+    
+    
+    
+    
+    .person {
+        display: flex;
+        background-color: #a93f48;
+        border-radius: 26px;
+        margin: 10px;
+    
+    }
+    
+    .person img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 5px;
+        
+    }
+    
+    .person h3 {
+        margin-top: 13px;
+        margin-bottom: 0px;
+    }
+    
+    #y-n-i{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #y-n-i svg {
+        width: 40px;
+    }
+    
+    .v {
+        fill: green;
+        padding-right: 200px;
+    }
+    
+    .x {
+        fill: red;
+        padding-right: 200px;
+    }
+    
