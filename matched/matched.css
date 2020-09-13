@@ -1,0 +1,286 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    background-color: #ababab23;
+    /* height: 900px; */
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+
+}
+
+.sidebar-menu {
+    /* width: 270px; */
+    background-color: #F8F8F8;
+    width: 17%;
+    height: 900px;
+    position: fixed;
+    border-right: 1px solid rgba(0, 0, 0, 0.205);
+}
+/* ava set */
+.ava-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+    height: 200px;
+    line-height: 0.6;
+    margin-bottom: 30px;
+
+}
+
+.ava-set h4{
+    color:#3F3D40;
+}
+
+.ava-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.nick-name {
+    font-size: 18px;
+    color: #1d2129;
+}
+
+.real-name {
+    margin-bottom: 0.5px;
+    font-size: 18px;
+    color: #1d2129;
+}
+
+/* menu options */
+.menu-element {
+    height: 50px;
+    width: 100%;
+    color:#1d2129 ;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-element h3 {
+    margin-left: 20px;
+    text-transform: uppercase;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-element svg {
+    width: 21px;
+    margin-left: 35px;
+    fill: rgb(153, 152, 152);
+}
+
+.menu-element:hover {
+    background-color: #a93f48;
+    border-radius: 15px;
+    color: white ;
+    /* box-shadow: -5px -8px 20px rgb(212, 212, 212),
+    5px 8px 20px rgb(158, 158, 158); */
+    box-shadow: -5px -8px 20px rgba(211, 211, 211, 0.733),
+    5px 8px 20px rgba(179, 179, 179, 0.747); 
+    transition: .4s;
+}
+
+.menu-elements-conatainer {
+    padding-bottom: 25px;
+}
+
+.menu-elements-conatainer h3{
+    color: #3F3D40;
+}
+
+.content {
+    width: 20%;
+    /* margin-left: 17%; */
+}
+
+.fixed-top-menu {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    background-color: #a93f48;
+}
+
+.message-icon {
+    fill:#6b6b6b;
+    margin-left: 20px;
+    width: 27px;
+}
+
+.noti-icon {
+    margin-left: 40px;
+    fill:#6b6b6b ;
+    width: 27px;
+}
+
+.fixed-top-menu input {
+    width: 450px;
+    height: 30px;
+    border-radius: 15px;
+    border-width: 0;
+    margin-left: 40%;
+    padding-left: 40px;
+    color: #6b6b6b ;
+    outline: none;
+}
+
+.fixed-top-menu input:focus{
+    box-shadow: -5px -8px 20px rgba(247, 246, 246, 0.733),
+    5px 8px 20px rgba(235, 235, 235, 0.747);  
+    transition: .4s;
+
+}
+
+#main {
+    padding-top: 50px;
+    display: flex;
+}
+
+#playlists {
+    height: 700px;
+    overflow: scroll;
+}
+
+#playlists h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #1d2129;
+}
+
+.playlist-name h2{
+    margin-top:5px;
+    margin-bottom: 5px;
+    color: #1d2129;
+}
+
+.playlist-name h5 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #6b6b6b;
+}
+
+.playlist {
+    display:flex;
+    
+    /* width: 1250px; */
+    margin-bottom: 50px;
+}
+
+.playlist img {
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.songs {
+    background-color: #e4e4e9;
+    margin-left:10px;
+    border-radius: 17px;
+    height: 150px;
+    overflow: scroll;
+    box-shadow: -10px -10px 15px rgb(255, 255, 255), 10px 10px 15px rgba(70, 70, 70, 0.178);
+}
+
+.song {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top:10px;
+    margin-left: 20px;
+    margin-right:20px;
+    margin-bottom: 10px;
+    background-color: #f3f3f3;
+    width: 400px;
+    border-radius: 12px;
+    cursor: pointer;
+    
+    
+}
+
+.song img {
+    height: 35px;
+    width: 35px;
+    border-radius: 3px;
+    margin-left: 7px;
+    object-fit: cover;
+}
+
+.title {
+    margin-left:15px;
+}
+
+.song h5{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #1d2129;
+}
+
+.song h6{
+    font-size: 10px;
+    color: #6b6b6b;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.song h7{  
+    font-size: 10px;
+    color: #6b6b6b;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.song:hover {
+    box-shadow: -10px -10px 10px rgb(255, 255, 255),
+    10px 10px 10px rgba(70, 70, 70, 0.178); 
+    transition: .4s;
+}
+
+#i4 {
+    margin-left:90px;
+    margin-right:90px;
+    margin-top:40px;
+    text-align: center;
+}
+
+#i4 h3 {
+    margin-top:0px;
+    margin-bottom: 10px;
+    color: #6b6b6b;
+}
+
+#i4 img{
+    height: 470px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    
+}
+
+#icon {
+    display: flex;
+    justify-content: space-around
+}
+
+#icon svg {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    fill: #6b6b6b;
+}
+
+#icon svg:hover {
+    fill:red;
+    
+    transition: .3s;
+}
