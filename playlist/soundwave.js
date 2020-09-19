@@ -7,25 +7,31 @@ var duration = document.querySelector(".duration");
 var musicList = [
 	{
 		songName: "Welcome To The Rubbish Dump",
-		artist: "Vanh The Blank",
+		artist: "ばらっげ",
 		songUrl:
-			"https://data25.chiasenhac.com/download2/2118/6/2117299-da5feef6/128/Diamonds%20-%20Sam%20Smith.mp3",
+        "../image/Someone's Satellite - I am, I was/01. Welcome To The Rubbish Dump.mp3",
 	},
 	{
-		songName: "",
-		artist: "Vanh The Blank",
+		songName: "Friend with Scraps",
+		artist: "ばらっげ",
 		songUrl:
-			"https://data25.chiasenhac.com/download2/2118/6/2117299-da5feef6/128/Diamonds%20-%20Sam%20Smith.mp3",
+			"../image/Someone's Satellite - I am, I was/02. Friend with Scraps.mp3",
 	},
 	{
-		songName: "Santa Claus is comming to MindX",
-		artist: "Vanh The Blank",
+		songName: "Battleships",
+		artist: "ばらっげ",
 		songUrl:
-			"https://data25.chiasenhac.com/download2/2118/6/2117299-da5feef6/128/Diamonds%20-%20Sam%20Smith.mp3",
+			"../image/Someone's Satellite - I am, I was/03. Battleships.mp3",
 	},
 	{
-		songName: "Santa Claus is comming to MindX",
-		artist: "Vanh The Blank",
+		songName: "Move, Move, Move",
+		artist: "ばらっげ",
+		songUrl:
+			"https://data25.chiasenhac.com/download2/2118/6/2117299-da5feef6/128/Diamonds%20-%20Sam%20Smith.mp3",
+    },
+    {
+        songName: "I am, I was",
+		artist: "ばらっげ",
 		songUrl:
 			"https://data25.chiasenhac.com/download2/2118/6/2117299-da5feef6/128/Diamonds%20-%20Sam%20Smith.mp3",
 	},
