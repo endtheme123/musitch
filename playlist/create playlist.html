@@ -12,7 +12,13 @@
 		/>
 		<link rel="stylesheet" href="../profile/profile-playlist/profile.css" />
 		<link rel="stylesheet" href="./create playlist.css" />
+<<<<<<< HEAD
 		<link rel="stylesheet" href="./checkbox.css">
+=======
+		<link rel="stylesheet" href="./avatar.css">
+		<!-- <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/filepond/dist/filepond.min.css"> -->
+>>>>>>> e1095528bebbb9b663a0c70b980f45a2069c09fd
 	</head>
 	<body>
 		<!-- menu top -->
@@ -281,11 +287,15 @@
 				<div id="createPlaylist">
 					<!-- playlist in4 -->
 					<div id="playlistIn4">
-						<div id="playlistCover">
-							<button id="coverUpload">
-								<h1>+</h1>
-								<h6>Cover</h6>
-							</button>
+						<div class="avatar-upload">
+							<div class="avatar-edit">
+								<input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+								<label for="imageUpload"></label>
+							</div>
+							<div class="avatar-preview">
+								<div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+								</div>
+							</div>
 						</div>
 						<div id="input">
 							<input id="nameInput" type="text" placeholder="playlist's name" />
@@ -296,22 +306,25 @@
 								placeholder="Description"
 							></textarea>
 						</div>
-					</div>
-					<!-- search bar -->
-					<input id="search" type="text" placeholder="Search tracks..." />
-					<!-- add button -->
-					<button id="addButton">
-						<h6 class="plusIcon">+</h6>
-						<h6 id="add">Add tracks</h6>
+    </div>
 
-						
-						<img  id="arrow" src="../image/next (2).svg" alt="">
-					</button>
+
+	<!-- search bar -->
+	<input id="search" type="text" placeholder="Search tracks..." />
+	<!-- add button -->
+	<button id="addButton">
+		<h6 class="plusIcon">+</h6>
+		<h6 id="add">Add tracks</h6>
+
+		
+		<img  id="arrow" src="../image/next (2).svg" alt="">
+	</button>
 <!-- total added -->
 
 <h6 id="totalAdded">2 songs added</h6>
 
 
+<<<<<<< HEAD
 					<!-- add in playlist -->
 					<div id="addInPlaylist">
 						<div id="songs">
@@ -519,14 +532,198 @@
 					
 						
 						
+=======
+	<!-- add in playlist -->
+	<div id="addInPlaylist">
+		<div id="songs">
+			<!-- song -->
+			<div class="addingSong">
+				<div class="song">
 
+					<!-- song cover -->
+					<img
+						class="songCover"
+						src="https://source.unsplash.com/random"
+						alt=""
+					/>
+					<!-- song in4 -->
+
+					<div class="songIn4">
+						<!-- song's name -->
+						<h6 class="songName">song's name</h6>
+						<!-- artist's name -->
+						<h6 class="songArtist">artist's name</h6>
+					</div>
+					<h6 class="time">4:46</h6>
+				</div>
+				
+				<button class="choose">
+					<img class="checkbox" src="../image/dot (1).svg" alt="">
+				</button>
+			</div>
+			<div class="addingSong">
+				<div class="song">
+
+					<!-- song cover -->
+					<img
+						class="songCover"
+						src="https://source.unsplash.com/random"
+						alt=""
+					/>
+					<!-- song in4 -->
+
+					<div class="songIn4">
+						<!-- song's name -->
+						<h6 class="songName">song's name</h6>
+						<!-- artist's name -->
+						<h6 class="songArtist">artist's name</h6>
+					</div>
+					<h6 class="time">4:46</h6>
+				</div>
+				
+				<button class="choose">
+					<img class="checkbox" src="../image/dot (1).svg" alt="">
+				</button>
+			</div>
+			<div class="addingSong">
+				<div class="song">
+>>>>>>> e1095528bebbb9b663a0c70b980f45a2069c09fd
+
+					<!-- song cover -->
+					<img
+						class="songCover"
+						src="https://source.unsplash.com/random"
+						alt=""
+					/>
+					<!-- song in4 -->
+
+					<div class="songIn4">
+						<!-- song's name -->
+						<h6 class="songName">song's name</h6>
+						<!-- artist's name -->
+						<h6 class="songArtist">artist's name</h6>
+					</div>
+					<h6 class="time">4:46</h6>
+				</div>
+				
+				<button class="choose">
+					<img class="checkbox" src="../image/dot (1).svg" alt="">
+				</button>
+			</div>
+			<div class="addingSong">
+				<div class="song">
+
+					<!-- song cover -->
+					<img
+						class="songCover"
+						src="https://source.unsplash.com/random"
+						alt=""
+					/>
+					<!-- song in4 -->
+
+					<div class="songIn4">
+						<!-- song's name -->
+						<h6 class="songName">song's name</h6>
+						<!-- artist's name -->
+						<h6 class="songArtist">artist's name</h6>
+					</div>
+					<h6 class="time">4:46</h6>
+				</div>
+				
+				<button class="choose">
+					<img class="checkbox" src="../image/dot (1).svg" alt="">
+				</button>
+			</div>
+			<div class="addingSong">
+				<div class="song">
+
+					<!-- song cover -->
+					<img
+						class="songCover"
+						src="https://source.unsplash.com/random"
+						alt=""
+					/>
+					<!-- song in4 -->
+
+					<div class="songIn4">
+						<!-- song's name -->
+						<h6 class="songName">song's name</h6>
+						<!-- artist's name -->
+						<h6 class="songArtist">artist's name</h6>
+					</div>
+					<h6 class="time">4:46</h6>
+				</div>
+				
+				<button class="choose">
+					<img class="checkbox" src="../image/dot (1).svg" alt="">
+				</button>
+			</div>
+			<div class="addingSong">
+				<div class="song">
+
+					<!-- song cover -->
+					<img
+						class="songCover"
+						src="https://source.unsplash.com/random"
+						alt=""
+					/>
+					<!-- song in4 -->
+
+					<div class="songIn4">
+						<!-- song's name -->
+						<h6 class="songName">song's name</h6>
+						<!-- artist's name -->
+						<h6 class="songArtist">artist's name</h6>
+					</div>
+					<h6 class="time">4:46</h6>
+				</div>
+				
+				<button class="choose">
+					<img class="checkbox" src="../image/dot (1).svg" alt="">
+				</button>
+			</div>
+			<div class="addingSong">
+				<div class="song">
+
+					<!-- song cover -->
+					<img
+						class="songCover"
+						src="https://source.unsplash.com/random"
+						alt=""
+					/>
+					<!-- song in4 -->
+
+					<div class="songIn4">
+						<!-- song's name -->
+						<h6 class="songName">song's name</h6>
+						<!-- artist's name -->
+						<h6 class="songArtist">artist's name</h6>
+					</div>
+					<h6 class="time">4:46</h6>
+				</div>
+				
+				<button class="choose">
+					<img class="checkbox" src="../image/dot (1).svg" alt="">
+				</button>
+			</div>
+			
+		
+			<!-- <input type="file" 
+			class="filepond"
+			name="filepond"
+			accept="image/png, image/jpeg, image/gif"/> -->
+		</div>
+		<!-- <h6 class="emptyPlaylist">Empty playlist</h6> -->
+	</div>
 							
-						</div>
-						<!-- <h6 class="emptyPlaylist">Empty playlist</h6> -->
+					</div>
+					
 					</div>
 				</div>
 			</div>
 		</div>
+
+
 
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -543,7 +740,12 @@
 			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 			crossorigin="anonymous"
 		></script>
+<<<<<<< HEAD
 		<script src="./create playlist.js"></script>
+=======
+        <script src="./avatar.js"></script>
+		<script src="./playlist.js"></script>
+>>>>>>> e1095528bebbb9b663a0c70b980f45a2069c09fd
 	</body>
 </html>
 
