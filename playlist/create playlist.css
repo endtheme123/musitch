@@ -26,7 +26,8 @@
 	background-color: ghostwhite;
 	border-radius: 15px;
 	margin: 20px;
-	box-shadow: 0 10px 20px rgba(92, 92, 92, 0.19), 0 6px 6px rgba(77, 77, 77, 0.23);
+	box-shadow: 0 10px 20px rgba(92, 92, 92, 0.19),
+		0 6px 6px rgba(77, 77, 77, 0.23);
 }
 
 #playlistIn4 {
@@ -190,12 +191,10 @@ textarea {
 }
 
 .songIn4 {
-	display: flex;
-	flex-flow: column;
 }
 
 .songName {
-	margin-top: 5px
+	margin-top: 5px;
 }
 
 .songArtist {
@@ -228,11 +227,12 @@ textarea {
 	width: 25px;
 }
 
-.time {
-	margin: 0px;
-	margin-left: 520px;
-	font-size: 15px;
+.subContent {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
 }
+
 
 /* width */
 
@@ -249,7 +249,7 @@ textarea {
 /* Handle */
 
 #addInPlaylist::-webkit-scrollbar-thumb {
-	background:#999;
+	background: #999;
 	border-radius: 3px;
 }
 
