@@ -1,16 +1,18 @@
 
-     body {
+    body {
         font-family: 'Nunito', sans-serif;
         width: 100%;
-        background-color: #F8F8F8;
-        height: 900px;
+        background-color: #E4E4E9;
+        /* height: 900px; */
         display: flex;
         flex-direction: row;
         margin: 0px;
+
     }
     
     .sidebar-menu {
         /* width: 270px; */
+        background-color: #F8F8F8;
         width: 17%;
         height: 900px;
         position: fixed;
@@ -146,6 +148,9 @@
         /* margin-right:2000px ; */
         padding-top: 50px;
         background-color: #E4E4E9;
+        padding-left: 150px;
+        padding-right: 8px;
+        
         
     }
 
@@ -189,7 +194,7 @@
     .song img {
         width: 150px;
         height: 150px;
-        border-radius: 10px;
+        border-radius: 15px;
         object-fit: cover;
     }
     
@@ -206,6 +211,7 @@
         margin-top: 30px;
         border-radius: 28px;
         /* margin-left : 0px; */
+        padding: 0 30px;
         }
     
     
@@ -229,9 +235,10 @@
     }
     
     .soong{
-        width: 200px;
+        width: 350px;
         
       display: flex;
+      
     align-items: center;
         border-radius: 27px;
         margin: 5px;
@@ -241,7 +248,7 @@
         height: 50px;
         width: 50px;
         margin-right: 20px;
-        border-radius: 26px;
+        border-radius: 5px;
     } 
     
     .soong h3 {
@@ -250,17 +257,36 @@
         color: #3F3D40;
     }
     
+
+    
+
+    .soong h6 {
+        font-size: 10px;
+        color: #C0BFC8;
+        margin-top: 6px;
+        margin-bottom: 0px;
+    }
+    
+    .soong h7 {
+        font-size: 10px;
+        color: #C0BFC8;
+        margin-left: auto;
+        
+    }
+
     #hAvx {
-        margin-top: 50px;
+        margin-top: 30px;
         
     }
     
     #hobbies {
         /* display: inline; */
-        /* width: 340px; */
+        width: 420px;
         background-color: white;
         border-radius: 28px;
-        padding-top :20px;
+        padding-top: 1px ;
+        margin-left: 5px;
+        padding-left:  30px;
     }
     
     #hobbies h2{
@@ -273,6 +299,11 @@
 
     #hobbies p {
         color: #3F3D40;
+    }
+    
+    #hobbies img {
+        width: 50px;
+
     }
 
     .hobby {
@@ -288,6 +319,8 @@
         margin-top: 30px;
         border-radius: 28px;
         background-color: white;
+        width: 250px;
+        padding-left: 30px;
     }
 
     #request h2{

@@ -291,14 +291,14 @@ body {
     font-weight: bold;
 }
 
-.profile-photos-button:hover {
+/* .profile-photos-button:hover {
     background-color: #a93f48;
     color: white ;
     box-shadow: -10px -10px 15px rgb(255, 255, 255),
     10px 10px 15px rgba(70, 70, 70, 0.178); 
     transition: .4s;
     font-size: 17px;
-}
+} */
 
 .profile-music-playlists-button {
     height: 45px;
@@ -325,14 +325,14 @@ body {
     font-size: 17px;
 }
 
-.profile-music-playlists-button:hover {
+/* .profile-music-playlists-button:hover {
     background-color: #a93f48;
     color: white ;
     box-shadow: -10px -10px 15px rgb(255, 255, 255),
     10px 10px 15px rgba(70, 70, 70, 0.178); 
     transition: .4s;
     font-size: 17px;
-}
+} */
 
 
 
