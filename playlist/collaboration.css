@@ -6,6 +6,10 @@
 	margin-left: 225px;
 }
 
+#collaboration {
+	background-color: white;
+	width: 1000px;
+}
 #tabs {
 	margin: 20px;
 	display: flex;
@@ -20,31 +24,40 @@
 .collabPlaylist {
 	display: flex;
 	width: 900px;
-	height: 300px;
+	height: 250px;
+	color: #fff;
 	align-items: center;
-	background-color: rgb(255, 255, 255);
 	border-radius: 15px;
+	background-color: hsla(0, 0%, 16%, 0.8);
+	background-blend-mode: overlay;
+	box-shadow: -10px -10px 15px rgb(255, 255, 255),
+		10px 10px 15px rgba(70, 70, 70, 0.178);
+	background-image: url("https://i.pinimg.com/originals/d9/de/11/d9de112b2c4aedef6df31d05194adf21.jpg");
+	background-repeat: none;
+	overflow: hidden;
+
 }
 
 .collaborators {
 	display: flex;
 	flex-flow: column;
-	justify-content: center;
+	
 	width: 250px;
 	height: 300px;
 	border-right: 1px solid rgba(206, 205, 205, 0.719);
+	
 }
-
 .collaboratorIn4 {
 	display: flex;
 	align-items: center;
 	flex-flow: column;
 }
 .collabProfile {
-	width: 100px;
-	height: 100px;
+	
+	width: 100%;
+	height: 175px;
 
-	border-radius: 10px;
+	
 }
 .collabName {
 	margin: 20px;
@@ -62,11 +75,17 @@
 }
 
 .song {
+	color: #fff;
 	width: 580px;
 	height: 50px;
 	display: flex;
 	align-items: center;
 	margin: 2px;
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.song:hover {
+	box-shadow: none;
+	transform: translateX(10px);
 }
 
 .songCover {
@@ -87,9 +106,10 @@
 }
 
 .showMore {
-	background-color: indianred;
-	color: white;
+	background-color: transparent;
+	color: #999;
 	border-radius: 15px;
+	margin-top: -15px;
 }
 
 .dash {
@@ -100,4 +120,21 @@
 	display: flex;
 	flex-flow: column;
 	margin: 20px;
+}
+
+button {
+	border: none;
+	outline: none;
+}
+button:focus {
+	outline: none;
+}
+
+hr {
+	margin: 30px 0px 30px 0px;
+}
+
+button:hover {
+	color: tomato;
+	text-decoration: underline;
 }
