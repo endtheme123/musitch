@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="./avatar.css">
 		<!-- <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css">
 		<link rel="stylesheet" href="https://unpkg.com/filepond/dist/filepond.min.css"> -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.19/dist/shoelace/shoelace.css">
 	</head>
 	<body>
 		<!-- menu top -->
@@ -318,7 +319,14 @@
 <!-- total added -->
 
 <h6 id="totalAdded">2 songs added</h6>
-
+<sl-dialog label="Dialog" class="dialog-scrolling">
+	<div style="height: 150vh; border: dashed 2px var(--sl-color-gray-80); padding: 0 1rem;">
+	  <p>Scroll down and give it a try! 👇</p>
+	</div>
+	<sl-button slot="footer" type="primary">Close</sl-button>
+  </sl-dialog>
+  
+  <sl-button>Add a new song</sl-button>
 
 	<!-- add in playlist -->
 	<div id="addInPlaylist">
@@ -526,6 +534,7 @@
 			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 			crossorigin="anonymous"
 		></script>
+		<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.19/dist/shoelace/shoelace.esm.js"></script>
         <script src="./avatar.js"></script>
 		<script src="./playlist.js"></script>
 	</body>
