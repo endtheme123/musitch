@@ -12,6 +12,8 @@
 		/>
 		<link rel="stylesheet" href="../profile/profile-playlist/profile.css" />
 		<link rel="stylesheet" href="./create playlist.css" />
+		<!-- <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/filepond/dist/filepond.min.css"> -->
 	</head>
 	<body>
 		<!-- menu top -->
@@ -280,8 +282,9 @@
 				<div id="createPlaylist">
 					<!-- playlist in4 -->
 					<div id="playlistIn4">
-						<div id="playlistCover">
+						<div id="playlistCover"> 	
 							<button id="coverUpload">
+								<input type="file" name="" id="fileUpload" hidden>
 								<h1>+</h1>
 								<h6>Cover</h6>
 							</button>
@@ -485,18 +488,18 @@
 							</div>
 							
 						
-						
-					
-						
-						
-
-							
+							<!-- <input type="file" 
+							class="filepond"
+							name="filepond"
+							accept="image/png, image/jpeg, image/gif"/> -->
 						</div>
 						<!-- <h6 class="emptyPlaylist">Empty playlist</h6> -->
 					</div>
 				</div>
 			</div>
 		</div>
+
+
 
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -513,6 +516,16 @@
 			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 			crossorigin="anonymous"
 		></script>
+
+		<!-- <script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.min.js"></script>
+		<script src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.min.js"></script>
+		<script src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.min.js"></script>
+		<script src="https://unpkg.com/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.min.js"></script>
+		<script src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.min.js"></script>
+		<script src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.min.js"></script>
+		<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
+		<script src="https://unpkgdist/filepond.min.js.com/filepond/"></script> -->
+
 		<script src="./playlist.js"></script>
 	</body>
 </html>
