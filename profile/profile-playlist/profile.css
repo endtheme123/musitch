@@ -231,9 +231,8 @@ body {
     margin-top: 11px;
 }
 
-.menu-element:hover .menu-element-icon svg {
-    transition: .4s;
-    fill: #ffffff;
+.menu-element-icon {
+    display: flex;
 }
 
 .menu-element h3 {
