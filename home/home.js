@@ -20,6 +20,7 @@ let thumbnails = [
 ]
 
 let artists = ['Blackpink', 'Phương Ly, Tinle', 'Powfu, Beabadoobee']
+let titles = ['How you like me', 'Missing you', 'Death bed']
 
 let playing = true
 
@@ -50,7 +51,7 @@ function nextSong() {
 
     song.src = songs[songIndex]
     thumbnail.src = thumbnails[songIndex]
-    background.src = thumbnails[songIndex]
+    // background.src = thumbnails[songIndex]
 
     songArtist.innerHTML = artists[songIndex]
     songTitle.innerHTML = titles[songIndex]
@@ -67,7 +68,7 @@ function previousSong() {
 
     song.src = songs[songIndex]
     thumbnail.src = thumbnails[songIndex]
-    background.src = thumbnails[songIndex]
+    // background.src = thumbnails[songIndex]
 
     songArtist.innerHTML = artists[songIndex]
     songTitle.innerHTML = titles[songIndex]

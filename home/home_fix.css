@@ -424,7 +424,7 @@ body {
 #information {
 	/* display: inline; */
 	width: 420px;
-	height: 95%;
+
 	background-color: white;
 	border-radius: 28px;
 	padding-top: 1px;
@@ -459,7 +459,7 @@ body {
 
 #pcocham {
 	display: -webkit-box;
-	-webkit-line-clamp: 3;
+	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -531,7 +531,7 @@ body {
 }
 
 #btn_setting_ppl {
-	border-color: #ffffff00;
+	border-color: #ffffff00; 
 	outline: none !important;
 	border-radius: 30px;
 }
@@ -540,3 +540,5 @@ body {
 	font-size: 20px;
 	margin-bottom: 7px !important;
 }
+
+
