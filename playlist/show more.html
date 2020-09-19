@@ -11,7 +11,7 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="../profile/profile-playlist/profile.css" />
-		<link rel="stylesheet" href="./match playlist.css" />
+		<link rel="stylesheet" href="./show more.css" />
 	</head>
 	<body>
 		<!-- menu top -->
@@ -118,7 +118,7 @@
 						<h3>Home</h3>
 					</div>
 
-					<div class="menu-element ">
+					<div class="menu-element">
 						<div class="menu-element-icon">
 							<svg
 								height="512pt"
@@ -175,7 +175,7 @@
 						<h3>My playlists</h3>
 					</div>
 
-					<div class="menu-element ">
+					<div class="menu-element">
 						<div class="menu-element-icon">
 							<svg
 								viewBox="0 -28 512.001 512"
@@ -236,170 +236,241 @@
 					</div>
 				</section>
 			</section>
+		</section>
+		<!-- content -->
+		<div>
+			<!-- played -->
+			<!-- <div id="played">
+			<div id="playedIcon">
+				<img src="../image/plus.png" alt="" />
+				<img src="../image/plus.png" alt="" />
+				<img src="../image/plus.png" alt="" />
+			</div>
+			<div id="songIcon">
+				<img src="../image/plus.png" alt="" />
+			</div>
+			<div id="playedSongIn4">
+				<h6 id="playedSongName">song's name</h6>
+				<h6 id="playedSongArtist">song's artist</h6>
+			</div>
+			<div id="playedExtentedIcon">
+				<img src="../image/plus.png" alt="" />
+				<img src="../image/plus.png" alt="" />
+				<img src="../image/plus.png" alt="" />
+			</div>
+		</div> -->
+			<!-- body -->
+			<div id="body">
+				<!-- tag -->
+				<div id="tabs">
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link" href="#">My playlist</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Collaboration</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Followed</a>
+						</li>
+					</ul>
+				</div>
 
-			<!-- content -->
-			<div>
-				<!-- played -->
-				<!-- <div id="played">
-					<div id="playedIcon">
-						<img src="../image/plus.png" alt="" />
-						<img src="../image/plus.png" alt="" />
-						<img src="../image/plus.png" alt="" />
-					</div>
-					<div id="songIcon">
-						<img src="../image/plus.png" alt="" />
-					</div>
-					<div id="playedSongIn4">
-						<h6 id="playedSongName">song's name</h6>
-						<h6 id="playedSongArtist">song's artist</h6>
-					</div>
-					<div id="playedExtentedIcon">
-						<img src="../image/plus.png" alt="" />
-						<img src="../image/plus.png" alt="" />
-						<img src="../image/plus.png" alt="" />
-					</div>
-				</div> -->
-				<!-- body -->
-				<div id="body">
-					<!-- tag -->
-					<div id="tabs">
-						<ul class="nav nav-tabs">
-							<li class="nav-item">
-								<a class="nav-link " href="#">My playlist</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active" href="#">Collaboration</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Followed</a>
-							</li>
+				<!-- create playlist -->
+				<div id="createPlaylist">
+					<!-- playlist in4 -->
+					<div id="playlistIn4">
+						<div id="playlistCover">
+							<button id="coverUpload">
+								<img class="albumIcon" src="../image/music.svg" alt="" style="height: 70px;">
+							</button>
+						</div>
+						<div id="input">
+							<h6 id="nameInput">playlist's name </h6>
+
+							<p
+								id="descriptionInput"
 							
-						</ul>
-
+							>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+						</div>
 					</div>
+				
+<!-- total added -->
 
-					<!-- collaboration -->
-					<div id="collaboration">
+<h6 id="totalAdded">2 songs added</h6>
 
-						<h2 id="currentWork">
-							CURRENT WORK
-						</h2>
 
-					<!-- collab playlist -->
-						<div id="collabPlaylist">
-
+					<!-- add in playlist -->
+					<div id="addInPlaylist">
+						<div id="songs">
+							<!-- song -->
 						
-						<!-- collaborators -->
-						<div id="collaborators">
-
-							<!-- collaborator in4 -->
-							<div class="collaboratorIn4">
-								<img class="collabProfile"  src="https://source.unsplash.com/random" alt="">
-								<h6 class="collabName">collaborator's name</h6>
+							<div class="addingSong">
+								<div class="song">
 	
-							</div>
-
-
-							<!-- collab sound -->
-
-							
-<!-- songs -->
-							<div id="songs">
-									<!-- song -->
-									<div class="song">
-										<!-- song cover -->
-										<img class="songCover"
-										src="https://source.unsplash.com/random alt="">
-										<!-- song in4 -->
-
-										<div class="songIn4">
-											<!-- song's name -->
-											<h6 class="songName">song's name</h6>
-											<!-- artist's name -->
-											<h6 class="songArtist">artist's name</h6>
-										</div>
+									<!-- song cover -->
+									<img
+										class="songCover"
+										src="https://source.unsplash.com/random"
+										alt=""
+									/>
+									<!-- song in4 -->
+	
+									<div class="songIn4">
+										<!-- song's name -->
+										<h6 class="songName">song's name</h6>
+										<!-- artist's name -->
+										<h6 class="songArtist">artist's name</h6>
 									</div>
-
-									<div class="song">
-										<!-- song cover -->
-										<img class="songCover"
-										src="https://source.unsplash.com/random alt="">
-										<!-- song in4 -->
-
-										<div class="songIn4">
-											<!-- song's name -->
-											<h6 class="songName">song's name</h6>
-											<!-- artist's name -->
-											<h6 class="songArtist">artist's name</h6>
-										</div>
-									</div>
-
-									<div class="song">
-										<!-- song cover -->
-										<img
-											class="songCover"
-											src="https://source.unsplash.com/random"
-											alt=""
-										/>
-										<!-- song in4 -->
-
-										<div class="songIn4">
-											<!-- song's name -->
-											<h6 class="songName">song's name</h6>
-											<!-- artist's name -->
-											<h6 class="songArtist">artist's name</h6>
-										</div>
-									</div>
-
-									<div class="song">
-										<!-- song cover -->
-										<img
-											class="songCover"
-											src="https://source.unsplash.com/random"
-											alt=""
-										/>
-										<!-- song in4 -->
-
-										<div class="songIn4">
-											<!-- song's name -->
-											<h6 class="songName">song's name</h6>
-											<!-- artist's name -->
-											<h6 class="songArtist">artist's name</h6>
-										</div>
-									</div>
-
-									<div class="song">
-										<!-- song cover -->
-										<img
-											class="songCover"
-											src="https://source.unsplash.com/random"
-											alt=""
-										/>
-										<!-- song in4 -->
-
-										<div class="songIn4">
-											<!-- song's name -->
-											<h6 class="songName">song's name</h6>
-											<!-- artist's name -->
-											<h6 class="songArtist">artist's name</h6>
-										</div>
-									</div>
+									<h6 class="time">4:46</h6>
 								</div>
+								
+								
+              </div>
+              <div class="addingSong">
+								<div class="song">
+	
+									<!-- song cover -->
+									<img
+										class="songCover"
+										src="https://source.unsplash.com/random"
+										alt=""
+									/>
+									<!-- song in4 -->
+	
+									<div class="songIn4">
+										<!-- song's name -->
+										<h6 class="songName">song's name</h6>
+										<!-- artist's name -->
+										<h6 class="songArtist">artist's name</h6>
+									</div>
+									<h6 class="time">4:46</h6>
+								</div>
+								
+								
+              </div>
+              <div class="addingSong">
+								<div class="song">
+	
+									<!-- song cover -->
+									<img
+										class="songCover"
+										src="https://source.unsplash.com/random"
+										alt=""
+									/>
+									<!-- song in4 -->
+	
+									<div class="songIn4">
+										<!-- song's name -->
+										<h6 class="songName">song's name</h6>
+										<!-- artist's name -->
+										<h6 class="songArtist">artist's name</h6>
+									</div>
+									<h6 class="time">4:46</h6>
+								</div>
+								
+								
+              </div>
+              <div class="addingSong">
+								<div class="song">
+	
+									<!-- song cover -->
+									<img
+										class="songCover"
+										src="https://source.unsplash.com/random"
+										alt=""
+									/>
+									<!-- song in4 -->
+	
+									<div class="songIn4">
+										<!-- song's name -->
+										<h6 class="songName">song's name</h6>
+										<!-- artist's name -->
+										<h6 class="songArtist">artist's name</h6>
+									</div>
+									<h6 class="time">4:46</h6>
+								</div>
+								
+								
+              </div>
+              <div class="addingSong">
+								<div class="song">
+	
+									<!-- song cover -->
+									<img
+										class="songCover"
+										src="https://source.unsplash.com/random"
+										alt=""
+									/>
+									<!-- song in4 -->
+	
+									<div class="songIn4">
+										<!-- song's name -->
+										<h6 class="songName">song's name</h6>
+										<!-- artist's name -->
+										<h6 class="songArtist">artist's name</h6>
+									</div>
+									<h6 class="time">4:46</h6>
+								</div>
+								
+								
+              </div>
+              <div class="addingSong">
+								<div class="song">
+	
+									<!-- song cover -->
+									<img
+										class="songCover"
+										src="https://source.unsplash.com/random"
+										alt=""
+									/>
+									<!-- song in4 -->
+	
+									<div class="songIn4">
+										<!-- song's name -->
+										<h6 class="songName">song's name</h6>
+										<!-- artist's name -->
+										<h6 class="songArtist">artist's name</h6>
+									</div>
+									<h6 class="time">4:46</h6>
+								</div>
+								
+								
+              </div>
+              <div class="addingSong">
+								<div class="song">
+	
+									<!-- song cover -->
+									<img
+										class="songCover"
+										src="https://source.unsplash.com/random"
+										alt=""
+									/>
+									<!-- song in4 -->
+	
+									<div class="songIn4">
+										<!-- song's name -->
+										<h6 class="songName">song's name</h6>
+										<!-- artist's name -->
+										<h6 class="songArtist">artist's name</h6>
+									</div>
+									<h6 class="time">4:46</h6>
+								</div>
+								
+								
+							</div>
+						
+					
+						
+						
+
 							
 						</div>
-							</div>
-						</div>
-						
+						<!-- <h6 class="emptyPlaylist">Empty playlist</h6> -->
 					</div>
 				</div>
-					
-<<<<<<< HEAD
-				</div>	
-				
-=======
+			</div>
 		</div>
-								
->>>>>>> 1dcf95d0bf07ae6d633cbd12e8e638c28715d00e
 
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
