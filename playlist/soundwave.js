@@ -6,34 +6,37 @@ var duration = document.querySelector(".duration");
 
 var musicList = [
 	{
-		songName: "Welcome To The Rubbish Dump",
+		cover: "../image/Someone's Satellite - I am, I was/cover.jpg",
+		Name: "Welcome To The Rubbish Dump",
 		artist: "ばらっげ",
 		songUrl:
-        "../image/Someone's Satellite - I am, I was/01. Welcome To The Rubbish Dump.mp3",
+			"../image/Someone's Satellite - I am, I was/01. Welcome To The Rubbish Dump.mp3",
 	},
 	{
-		songName: "Friend with Scraps",
+		cover: "../image/Someone's Satellite - I am, I was/cover.jpg",
+		Name: "Friend with Scraps",
 		artist: "ばらっげ",
 		songUrl:
 			"../image/Someone's Satellite - I am, I was/02. Friend with Scraps.mp3",
 	},
 	{
-		songName: "Battleships",
+		cover: "../image/Someone's Satellite - I am, I was/cover.jpg",
+		Name: "Battleships",
 		artist: "ばらっげ",
-		songUrl:
-			"../image/Someone's Satellite - I am, I was/03. Battleships.mp3",
+		songUrl: "../image/Someone's Satellite - I am, I was/03. Battleships.mp3",
 	},
 	{
-		songName: "Move, Move, Move",
+		cover: "../image/Someone's Satellite - I am, I was/cover.jpg",
+		Name: "Move, Move, Move",
 		artist: "ばらっげ",
 		songUrl:
-			"https://data25.chiasenhac.com/download2/2118/6/2117299-da5feef6/128/Diamonds%20-%20Sam%20Smith.mp3",
-    },
-    {
-        songName: "I am, I was",
+			"../image/Someone's Satellite - I am, I was/04. Move, Move, Move.mp3",
+	},
+	{
+		cover: "../image/Someone's Satellite - I am, I was/cover.jpg",
+		Name: "I am, I was",
 		artist: "ばらっげ",
-		songUrl:
-			"https://data25.chiasenhac.com/download2/2118/6/2117299-da5feef6/128/Diamonds%20-%20Sam%20Smith.mp3",
+		songUrl: "../image/Someone's Satellite - I am, I was/05. I am, I was.mp3",
 	},
 ];
 
@@ -120,14 +123,48 @@ function handleVolumeUp() {
 
 //custom JS
 let soucePlayer = $("#musicSource");
+let songs = $("#songs");
+let song = $(".song");
+let songListRender = "";
+for (let i = 0; i < musicList.length; i++) {
+	let name = musicList[i].Name;
+	let artist = musicList[i].artist;
+	let songUrl = musicList[i].songUrl;
+	let cover = musicList[i].cover;
 
-function changeMusic(songName) {
-	if (songName == "Love love love") {
-		soucePlayer.attr(
-			"src",
-			"https://data25.chiasenhac.com/download2/2118/6/2117299-da5feef6/128/Diamonds%20-%20Sam%20Smith.mp3"
-		);
-	}
+	songListRender += `<div class="song" data-songUrl="${songUrl}" data-name="${name}" data-artist="${artist}" data-cover="${cover}">
+<img
+	class="songCover"
+	src="${cover}"
+	alt=""
+/>
+
+<div class="songIn4">
+	<!-- song's name -->
+	<h6 class="songName">${name}</h6>
+	<!-- artist's name -->
+	<h6 class="songArtist">${artist}</h6>
+</div>
+</div>`;
+}
+songs.html(songListRender);
+
+$(".song").on("click", function (event) {
+	// $("#sourcePlayer").attr("src", musicList[0].songUrl);
+	let songLink = this.dataset.songurl;
+	console.log(songLink);
+	let songCover = this.dataset.cover;
+	console.log(songCover);
+	let songName = this.dataset.name;
+	let songArtist = this.dataset.artist;
+
+	$("#musicSource").attr("src", songLink);
+	/****************/
 
 	music.load();
-}
+	music.oncanplaythrough = music.play();
+
+	$("#playingMusicCover").attr("src", songCover);
+	$(".title").html(songName);
+	$(".singer").html(songArtist);
+});
