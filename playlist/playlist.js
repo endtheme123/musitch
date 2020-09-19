@@ -7,7 +7,8 @@ $(document).ready(function () {
         arrows: true,
         speed: 2000,
         autoplaySpeed: 1500,
-        slidesToScroll: 3
+        
+
     });
 });
 
