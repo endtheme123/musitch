@@ -37,7 +37,7 @@ body {
     padding-left: 30px;
     color: #6b6b6b ;
     outline: none;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .fixed-top-menu input:focus{
@@ -57,7 +57,8 @@ body {
 }
 
 .noti-icon {
-    fill:#d8d8d8 ;
+    /* fill:#d8d8d8 ; */
+    fill: #f8f8f8;
     width: 26px;
 }
 
@@ -67,7 +68,8 @@ body {
 }
 
 .message-icon {
-    fill:#d8d8d8;
+    /* fill:#d8d8d8; */
+    fill: #f8f8f8;
     width: 24.5px;
 }
 
@@ -88,8 +90,9 @@ body {
 
 
 .previous-song-icon{
-    fill:#d8d8d8 ;
+    /* fill:#d8d8d8 ; */
     width: 25px;
+    fill: #f8f8f8;
 }
 
 .menu-playing-icon:hover .previous-song-icon {
@@ -98,8 +101,10 @@ body {
 }
 
 .stop-icon {
-    fill:#d8d8d8 ;
+    /* fill:#d8d8d8 ; */
     width: 27px;
+    fill: #f8f8f8;
+    /* margin-left: 8px; */
 }
 
 .menu-playing-icon:hover .stop-icon {
@@ -108,8 +113,10 @@ body {
 }
 
 .play-icon {
-    fill:#d8d8d8 ;
-    width: 27px;
+    /* fill:#d8d8d8 ; */
+    width: 28px;
+    fill: #f8f8f8;
+    /* margin-left: 8px; */
 }
 
 .menu-playing-icon:hover .play-icon {
@@ -118,7 +125,9 @@ body {
 }
 
 .next-song-icon {
-    fill:#d8d8d8 ;
+    /* margin-left: 8px; */
+    /* fill:#d8d8d8 ; */
+    fill: #f8f8f8;
     width: 25px;
 }
 
@@ -143,7 +152,7 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     cursor: pointer;
-    color: #d8d8d8;
+    color: #f8f8f8   ;
 }
 
 .playing-song-info:hover {
@@ -165,7 +174,6 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 }
-
 
 
 
