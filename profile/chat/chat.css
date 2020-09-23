@@ -18,7 +18,6 @@ body {
     top: 0;
     left: 0;
     background-color: #aa444d;
-
 }
 
 .menu-playing-music {
@@ -177,8 +176,8 @@ body {
 
 /* messages sidebar */
 .message-list-sidebar{
-    width: 25%;
-    height: 900px;
+    width: 23%;
+    height: 100vh;
     position: fixed;
     background-color:  #F8F8F8;
     left: 0;
@@ -189,8 +188,8 @@ body {
 
 /* content */
 .content {
-    width: 75%;
-    margin-left: 25%;
+    width: 77%;
+    margin-left: 23%;
     height: auto;
     border-radius: 15px;
     display: flex;
@@ -200,8 +199,8 @@ body {
 
 /* chat */
 .conversation {
-    width: 66%;
-    height: 900px;
+    width: 62%;
+    height: 100vh;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -212,8 +211,8 @@ body {
     flex-direction: row;
     align-items: center;
     height: 60px;
-    width: 50.455%;
-    left: 25%;
+    width: 50.8%;
+    left: 23%;
     background-color: #F8F8F8;
     position: fixed;
     top: 60px;
@@ -225,8 +224,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 50.455%;
-    left: 25%;
+    width: 50.8%;
+    left: 23%;
     background-color:#F8F8F8;
     position: fixed;
     bottom: 0;
@@ -234,19 +233,21 @@ body {
 
 /* profile */
 .person-profile-bar {
-    height: 900px;
+    height: 100vh;
     margin-left: 50%;
     box-shadow:0px  3px 10px rgba(70, 70, 70, 0.057);
     top: 60px;
     display: flex;
     flex-direction: column;
     width: 50.455%;
+    overflow: scroll;
     position: fixed;
+    padding-bottom: 60px;
 }
 
 
 
-
+/* sidebar */
 .inbox-top-intro {
     height: auto;
     width: 100%;
@@ -282,7 +283,7 @@ body {
 .inbox-number {
     font-size: 17px;
     margin-right: 20px;
-    margin-left: 37%;
+    margin-left: auto;
     color: #1d2129;
 }
 
@@ -319,8 +320,8 @@ body {
 .inbox:hover {
     background-color: #F8F8F8 ;
     transition: 0.4s;
-    box-shadow: -10px -10px 10px rgb(255, 255, 255),
-    10px 10px 10px rgba(70, 70, 70, 0.178); 
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.452),
+    10px 10px 10px rgba(71, 71, 71, 0.055); 
 }
 
 /* .chatting-person-active {
@@ -365,19 +366,13 @@ body {
     color: #6b6b6b;
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: 10px;
+    margin-left: auto;
 }
 
 
 /* content */
-.content {
-    width: 75%;
-    margin-left: 25%;
-    height: auto;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: row;
-    padding-top: 50px;
-}
+
 
 /* chat */
 .conversation {
@@ -388,18 +383,6 @@ body {
 }
 
 /* chat top bar */
-.person-chatting-topbar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 60px;
-    width: 50.455%;
-    left: 25%;
-    background-color: #F8F8F8;
-    position: fixed;
-    top: 60px;
-}
-
 .person-chatting-ava-img{
     width: 40px;
     height: 40px;
@@ -432,6 +415,7 @@ body {
 .conversation-content {
     display: flex;
     flex-direction: column;
+    padding-bottom: 70px;
 }
 
 .person-a{
@@ -441,7 +425,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 30px; 
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .person-a p {
@@ -455,13 +439,13 @@ body {
     padding : 15px;
 }
 .person-b{
-    width: 100%;
+    width: 96.5%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-top: 30px;
-    margin-right: 40px;
+
 }
 
 .person-b p {
@@ -474,6 +458,7 @@ body {
     padding : 15px; 
     margin-top: 0;
     border-radius: 15px;
+    /* margin-right: 20px; */
 }
 
 
@@ -497,7 +482,7 @@ margin-right: 5px;
 }
 
 .combo-img-message-by-b {
-    width: 100%;
+    width: 96.5%;
     height: auto;
     display: flex;
     margin-top: 30px;
@@ -517,17 +502,7 @@ margin-left: 5px;
 
 
 /* bottom type bar */
-.type-bar{
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 50.455%;
-    left: 25%;
-    background-color:#F8F8F8;
-    position: fixed;
-    bottom: 0;
-}
+
 
 .add-items-icon {
     width: 25px;
@@ -556,25 +531,18 @@ margin-left: 5px;
 }
 
 /* profile */
-.person-profile-bar {
-    height: 900px;
-    margin-left: 50%;
-    box-shadow:0px  3px 10px rgba(70, 70, 70, 0.057);
-    top: 60px;
-    display: flex;
-    flex-direction: column;
-}
 
 
 /* profile info */
 .top-profile-set {
     margin-left: 50px;
     margin-right: 50px;
-    width: 318px;
-    height: 150px;
+    width: 350px;
+    height: 400px;
     background-color: #f8f8f8;
     box-shadow: -10px -10px 15px rgb(255, 255, 255),
-    10px 10px 15px rgba(70, 70, 70, 0.178); 
+    5px 2px 10px #6b6b6b15; 
+    box-shadow: 5px 2px 10px #6b6b6b15;
     border-radius: 15px;
     margin-top: 40px;
     display: flex;
@@ -583,11 +551,14 @@ margin-left: 5px;
     align-items: center;
 }
 
+
+
 .person-profile-ava-img {
     width: 70px;
     height: 70px;
     object-fit: cover;
     border-radius: 50%;
+    margin-top: 20px;
 }
 
 .person-name-user {
@@ -601,7 +572,7 @@ margin-left: 5px;
 
 .person-real-name{
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     padding-top: 3px;
     font-size: 16px;
     font-weight: bold;
@@ -610,17 +581,17 @@ margin-left: 5px;
 
 /* view profile */
 .go-to-person-profile-button {
-    width: 150px;
+    width: 140px;
     height: 40px;
     background-color: #f8f8f8;
     box-shadow: -10px -10px 15px rgb(255, 255, 255),
-    10px 10px 15px rgba(70, 70, 70, 0.178); 
+    5px 2px 10px #6b6b6b15; 
     border-radius: 15px;
     margin-left: 16%;
     display: flex;
     justify-content: center;
     align-items: center;
-   margin-top: 25px;
+   margin-top: 40px;
    text-decoration: none;
    color: #1d2129;
    font-weight: bold;
@@ -635,11 +606,11 @@ margin-left: 5px;
 
 /* person profile playlist */
 .person-profile-playlist {
-    width: 318px;
+    width: 350px;
     height: auto;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 .person-playlist-top-content {
@@ -676,24 +647,161 @@ margin-left: 5px;
     fill: #6b6b6b;
 }
 
+
+/* person profile content */
 .person-profile-playlist-content {
     width: 100%;
-    height: 200px;
-    background-color: #f8f8f8;
+    height: 140px;
     box-shadow: -10px -10px 15px rgb(255, 255, 255),
-    10px 10px 15px rgba(70, 70, 70, 0.178); 
+    5px 2px 10px #6b6b6b15; 
     border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f8f8f8;
 }
 
-.person-playlist-info img {
-    height: 150px;
-    width: 150px;
+
+.person-playlist-img-cover {
+    height: 125px;
+    width: 125px;
     object-fit: cover;
     border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.person-playlitst-song-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 150px;
+    width: 180px;
+}
+
+.person-playlist-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-top: 7px;
+    color: #1d2129;
+}
+
+.person-playlist-songs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 130px;
+}
+
+.person-playlist-one-song {
+    height: 30px;
+    width: 100%;
+   background-color: #6665650a;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-top: 5px;
 
 }
 
 
+.person-playlist-song-img {
+    width: 27px;
+    height: 27px;
+    object-fit: cover;
+    border-radius: 3px;
+    margin-right: 13px;
+    margin-left: 10px;
+}
+
+
+.person-playlist-song-name {
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 35%;
+    color: #1d2129;
+}
+
+.person-playlist-artist {
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #1d2129;
+}
+
+
+
+/* photo */
+
+.person-photos {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+
+}
+
+.person-photo-top-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.person-photo-text {
+    margin-top: 0;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.see-all-person-photo-text {
+    font-size: 15px;
+    margin-top: 0;
+    color: #6b6b6b;
+}
+
+.see-all-person-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.see-all-person-photo svg {
+    width: 13px;
+    margin-top: 3px;
+    fill: #6b6b6b;
+}
+
+.person-photo-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.person-three-photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.person-three-photos img {
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+}
 
 
