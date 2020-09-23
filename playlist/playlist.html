@@ -10,8 +10,18 @@
 			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="../profile/profile.css" />
+		
+		<link rel="stylesheet" href="../profile/profile-playlist/profile.css" />
 		<link rel="stylesheet" href="./playlist.css" />
+		<link rel="stylesheet" href="./tabs.css">
+		<link rel="stylesheet" href="./soundwave.css">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"/>
 	</head>
 	<body>
 		<!-- menu top -->
@@ -262,22 +272,30 @@
 				<!-- body -->
 				<div id="body">
 					<!-- tag -->
-					<div id="tabs">
-						<ul class="nav nav-tabs">
-							<li class="nav-item">
-								<a class="nav-link active" href="#">My playlist</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Match playlist</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Followed</a>
-							</li>
-							
+					<div class="tabs">
+  
+						<input type="radio" id="tab1" name="tab-control" checked>
+						<input type="radio" id="tab2" name="tab-control">
+						<input type="radio" id="tab3" name="tab-control">  
+						
+						<ul>
+							<li title="Playlist"><label for="tab1" role="button"><svg viewBox="0 0 24 24"><path d="M14,2A8,8 0 0,0 6,10A8,8 0 0,0 14,18A8,8 0 0,0 22,10H20C20,13.32 17.32,16 14,16A6,6 0 0,1 8,10A6,6 0 0,1 14,4C14.43,4 14.86,4.05 15.27,4.14L16.88,2.54C15.96,2.18 15,2 14,2M20.59,3.58L14,10.17L11.62,7.79L10.21,9.21L14,13L22,5M4.93,5.82C3.08,7.34 2,9.61 2,12A8,8 0 0,0 10,20C10.64,20 11.27,19.92 11.88,19.77C10.12,19.38 8.5,18.5 7.17,17.29C5.22,16.25 4,14.21 4,12C4,11.7 4.03,11.41 4.07,11.11C4.03,10.74 4,10.37 4,10C4,8.56 4.32,7.13 4.93,5.82Z"/>
+					</svg><br><span>Playlist</span></label></li>
+							<li title="Collaboration"><label for="tab2" role="button"><svg viewBox="0 0 24 24"><path d="M2,10.96C1.5,10.68 1.35,10.07 1.63,9.59L3.13,7C3.24,6.8 3.41,6.66 3.6,6.58L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.66,6.72 20.82,6.88 20.91,7.08L22.36,9.6C22.64,10.08 22.47,10.69 22,10.96L21,11.54V16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V10.96C2.7,11.13 2.32,11.14 2,10.96M12,4.15V4.15L12,10.85V10.85L17.96,7.5L12,4.15M5,15.91L11,19.29V12.58L5,9.21V15.91M19,15.91V12.69L14,15.59C13.67,15.77 13.3,15.76 13,15.6V19.29L19,15.91M13.85,13.36L20.13,9.73L19.55,8.72L13.27,12.35L13.85,13.36Z" />
+					</svg><br><span>Collaboration</span></label></li>
+							<li title="Create Playlist"><label for="tab3" role="button"><svg viewBox="0 0 24 24">
+							<path d="M3,4A2,2 0 0,0 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8H17V4M10,6L14,10L10,14V11H4V9H10M17,9.5H19.5L21.47,12H17M6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5M18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5Z" />
+					</svg><br><span>Create Playlist</span></label></li>    <li title="Returns"></li><label for="tab4" role="button">
+							<path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+					<br></label></li>
 						</ul>
-
+						
+						<div class="slider"><div class="indicator"></div></div>
 					</div>
-					<!-- search -->
+
+
+					<div id="content">
+						<!-- search -->
 					<div id="searchBar">
 						<!-- <input id="search" type="text" placeholder="search"/>
 						<button id="searchIconAdjust">
@@ -306,8 +324,8 @@
 					<div id="myPlaylist">
 						<!-- playlists(name) and button -->
 						<div id="playlistAndButton">
-							<h2 id="playlistName">PLAYLIST</h2>
-							<a href="">show all</a>
+							<h2 id="playlistName">Playlist</h2>
+							<a id="showAll" href="">Show all</a>
 						</div>
 						<!-- playlists -->
 						<div id="playlists">
@@ -320,8 +338,8 @@
 									alt=""
 								/>
 								<!-- name -->
-								<h6 class="playlistSongName">song's name</h6>
-								<h6 class="playlistArtistName">artist's name</h6>
+								<h6 class="playlistSongName"> The Thing with Feathers</h6>
+								<h6 class="playlistArtistName">Sweet Dove</h6>
 							</div>
 							<div class="playlist">
 								<!-- cover -->
@@ -331,8 +349,8 @@
 									alt=""
 								/>
 								<!-- name -->
-								<h6 class="playlistSongName">song's name</h6>
-								<h6 class="playlistArtistName">artist's name</h6>
+								<h6 class="playlistSongName">Perches in the Soul</h6>
+								<h6 class="playlistArtistName">Sweet Dove</h6>
 							</div>
 							<div class="playlist">
 								<!-- cover -->
@@ -342,8 +360,8 @@
 									alt=""
 								/>
 								<!-- name -->
-								<h6 class="playlistSongName">song's name</h6>
-								<h6 class="playlistArtistName">artist's name</h6>
+								<h6 class="playlistSongName">	Tune Without Words</h6>
+								<h6 class="playlistArtistName">Sweet Dove</h6>
 							</div>
 							<div class="playlist">
 								<!-- cover -->
@@ -353,8 +371,9 @@
 									alt=""
 								/>
 								<!-- name -->
-								<h6 class="playlistSongName">song's name</h6>
-								<h6 class="playlistArtistName">artist's name</h6>
+								<h6 class="playlistSongName">	
+									Never Stopping at All</h6>
+								<h6 class="playlistArtistName">Sweet Dove</h6>
 							</div>
 							<div class="playlist">
 								<!-- cover -->
@@ -364,8 +383,8 @@
 									alt=""
 								/>
 								<!-- name -->
-								<h6 class="playlistSongName">song's name</h6>
-								<h6 class="playlistArtistName">artist's name</h6>
+								<h6 class="playlistSongName">Sweetest in the Gale</h6>
+								<h6 class="playlistArtistName">Sweet Dove</h6>
 							</div>
 						</div>
 					</div>
@@ -376,26 +395,26 @@
 						<div id="savedSong">
 							<!-- musics(name) and button -->
 							<div id="musicAndSort">
-								<h2 id="musicName">MUSIC</h2>
+								<h2 id="musicName">Music</h2>
 								<div id="dropdownSort">
 									<div class="dropdown">
 										<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											by default
+											By default
 										</button>
 										<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-											<button class="dropdown-item" type="button">by artist</button>
-											<button class="dropdown-item" type="button">by name</button>
-											<button class="dropdown-item" type="button">by time</button>
+											<button class="dropdown-item" type="button">By artist</button>
+											<button class="dropdown-item" type="button">By name</button>
+											<button class="dropdown-item" type="button">By time</button>
 										</div>
 									</div>
 								</div>
 							</div>
 							<!-- musics -->
-							<div>
+							<div id="songList">
 								<!-- shuffle all -->
 								<div>
 									<button id="shuffleAll">
-										<img id="shuffleIcon" src="../image/plus.png" alt="" />
+										<img id="shuffleIcon" src="../image/random.svg" alt="" />
 										shuffle all
 									</button>
 								</div>
@@ -410,9 +429,10 @@
 
 										<div class="songIn4">
 											<!-- song's name -->
-											<h6 class="songName">song's name</h6>
+											<h6 class="songName">	
+												The Thing with Feathers</h6>
 											<!-- artist's name -->
-											<h6 class="songArtist">artist's name</h6>
+											<h6 class="songArtist">Sweet Dove</h6>
 										</div>
 									</div>
 
@@ -424,9 +444,9 @@
 
 										<div class="songIn4">
 											<!-- song's name -->
-											<h6 class="songName">song's name</h6>
+											<h6 class="songName">Perches in the Soul</h6>
 											<!-- artist's name -->
-											<h6 class="songArtist">artist's name</h6>
+											<h6 class="songArtist">Sweet Dove</h6>
 										</div>
 									</div>
 
@@ -441,9 +461,9 @@
 
 										<div class="songIn4">
 											<!-- song's name -->
-											<h6 class="songName">song's name</h6>
+											<h6 class="songName">Tune Without Words</h6>
 											<!-- artist's name -->
-											<h6 class="songArtist">artist's name</h6>
+											<h6 class="songArtist">Sweet Dove</h6>
 										</div>
 									</div>
 
@@ -458,9 +478,9 @@
 
 										<div class="songIn4">
 											<!-- song's name -->
-											<h6 class="songName">song's name</h6>
+											<h6 class="songName">Never Stopping at All</h6>
 											<!-- artist's name -->
-											<h6 class="songArtist">artist's name</h6>
+											<h6 class="songArtist">Sweet Dove</h6>
 										</div>
 									</div>
 
@@ -475,192 +495,59 @@
 
 										<div class="songIn4">
 											<!-- song's name -->
-											<h6 class="songName">song's name</h6>
+											<h6 class="songName">Sweetest in the Gale</h6>
 											<!-- artist's name -->
-											<h6 class="songArtist">artist's name</h6>
+											<h6 class="songArtist">Sweet Dove</h6>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<!-- recommended -->
-						<div id="recommended">
-							<h2 id="recommendedName">QUEUE</h2>
-							<!-- queue -->
-							<div id="queue">
-								<!-- queued song -->
-								<div class="queuedSong">
-									<iframe
-										width="100%"
-										height="50px"
-										scrolling="no"
-										frameborder="no"
-										allow="autoplay"
-										src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/303606831&color=%23ff7700&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-									></iframe>
-									<div
-										style="
-											font-size: 10px;
-											color: #cccccc;
-											line-break: anywhere;
-											word-break: normal;
-											overflow: hidden;
-											white-space: nowrap;
-											text-overflow: ellipsis;
-											font-family: Interstate, Lucida Grande,
-												Lucida Sans Unicode, Lucida Sans, Garuda, Verdana,
-												Tahoma, sans-serif;
-											font-weight: 100;
-										"
-									>
-										<a
-											href="https://soundcloud.com/himmeltengoku"
-											title="himmel.LEMiao"
-											target="_blank"
-											style="color: #cccccc; text-decoration: none"
-											>himmel.LEMiao</a
-										>
-										·
-										<a
-											href="https://soundcloud.com/himmeltengoku/fc-yonder-voice-3"
-											title="[東方]無名の楽園[F/C Yonder Voice]"
-											target="_blank"
-											style="color: #cccccc; text-decoration: none"
-											>[東方]無名の楽園[F/C Yonder Voice]</a
-										>
-									</div>
+					
+						
+								<div class="queuedSong" >
+									<div class="player">
+										<div class="cover">
+												<img id="playingMusicCover" src="https://hosseinghanbari.ir/other/music-player/autumn.jpg" alt="">
+										</div>
+										<div class="info">
+												<div class="title">Autumn</div>
+												<div class="singer">Instrumental Music</div>
+										</div>
+										<div class="volume-box">
+												<span class="volume-down"><i class="material-icons">remove</i></span>
+												<input type="range" class="volume-range" step="1" value="80" min="0" max="100"
+														oninput="music.volume = this.value/100">
+												<span class="volume-up"><i class="material-icons">add</i></span>
+										</div>
+										<div class="btn-box">
+												<i class="material-icons repeat" onclick="handleRepeat()">repeat</i>
+												<i class="material-icons favorite active" onclick="handleFavorite()">favorite</i>
+												<i class="material-icons volume" onclick="handleVolume()">volume_up</i>
+										</div>
+										<div class="music-box">
+												<input type="range" step="1" class="seekbar" value="0" min="0" max="100" oninput="handleSeekBar()">
+						
+												<audio class="music-element" id="music">
+														<source id="musicSource" src="https://hosseinghanbari.ir/other/music-player/autumn.mp3" type="audio/mp3">
+												</audio>
+												<span class="current-time">0:0</span><span class="duration">0:0</span>
+												<span class="play" onclick="handlePlay()">
+														<i class="material-icons">play_arrow</i>
+												</span>
+										</div>
+								</div>
+									
+						
 									<hr id="musicDash" />
 								</div>
 
-								<div class="queuedSong">
-									<iframe
-										width="100%"
-										height="50px"
-										scrolling="no"
-										frameborder="no"
-										allow="autoplay"
-										src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/303606831&color=%23ff7700&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-									></iframe>
-									<div
-										style="
-											font-size: 10px;
-											color: #cccccc;
-											line-break: anywhere;
-											word-break: normal;
-											overflow: hidden;
-											white-space: nowrap;
-											text-overflow: ellipsis;
-											font-family: Interstate, Lucida Grande,
-												Lucida Sans Unicode, Lucida Sans, Garuda, Verdana,
-												Tahoma, sans-serif;
-											font-weight: 100;
-										"
-									>
-										<a
-											href="https://soundcloud.com/himmeltengoku"
-											title="himmel.LEMiao"
-											target="_blank"
-											style="color: #cccccc; text-decoration: none"
-											>himmel.LEMiao</a
-										>
-										·
-										<a
-											href="https://soundcloud.com/himmeltengoku/fc-yonder-voice-3"
-											title="[東方]無名の楽園[F/C Yonder Voice]"
-											target="_blank"
-											style="color: #cccccc; text-decoration: none"
-											>[東方]無名の楽園[F/C Yonder Voice]</a
-										>
-									</div>
-									<hr id="musicDash" />
-								</div>
-								<div class="queuedSong">
-									<iframe
-										width="100%"
-										height="50px"
-										scrolling="no"
-										frameborder="no"
-										allow="autoplay"
-										src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/303606831&color=%23ff7700&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-									></iframe>
-									<div
-										style="
-											font-size: 10px;
-											color: #cccccc;
-											line-break: anywhere;
-											word-break: normal;
-											overflow: hidden;
-											white-space: nowrap;
-											text-overflow: ellipsis;
-											font-family: Interstate, Lucida Grande,
-												Lucida Sans Unicode, Lucida Sans, Garuda, Verdana,
-												Tahoma, sans-serif;
-											font-weight: 100;
-										"
-									>
-										<a
-											href="https://soundcloud.com/himmeltengoku"
-											title="himmel.LEMiao"
-											target="_blank"
-											style="color: #cccccc; text-decoration: none"
-											>himmel.LEMiao</a
-										>
-										·
-										<a
-											href="https://soundcloud.com/himmeltengoku/fc-yonder-voice-3"
-											title="[東方]無名の楽園[F/C Yonder Voice]"
-											target="_blank"
-											style="color: #cccccc; text-decoration: none"
-											>[東方]無名の楽園[F/C Yonder Voice]</a
-										>
-									</div>
-									<hr id="musicDash" />
-								</div>
-								<div class="queuedSong">
-									<iframe
-										width="100%"
-										height="50px"
-										scrolling="no"
-										frameborder="no"
-										allow="autoplay"
-										src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/303606831&color=%23ff7700&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-									></iframe>
-									<div
-										style="
-											font-size: 10px;
-											color: #cccccc;
-											line-break: anywhere;
-											word-break: normal;
-											overflow: hidden;
-											white-space: nowrap;
-											text-overflow: ellipsis;
-											font-family: Interstate, Lucida Grande,
-												Lucida Sans Unicode, Lucida Sans, Garuda, Verdana,
-												Tahoma, sans-serif;
-											font-weight: 100;
-										"
-									>
-										<a
-											href="https://soundcloud.com/himmeltengoku"
-											title="himmel.LEMiao"
-											target="_blank"
-											style="color: #cccccc; text-decoration: none"
-											>himmel.LEMiao</a
-										>
-										·
-										<a
-											href="https://soundcloud.com/himmeltengoku/fc-yonder-voice-3"
-											title="[東方]無名の楽園[F/C Yonder Voice]"
-											target="_blank"
-											style="color: #cccccc; text-decoration: none"
-											>[東方]無名の楽園[F/C Yonder Voice]</a
-										>
-									</div>
-									<hr id="musicDash" />
-								</div>
-							</div>
-						</div>
+								
+								
+								
+						
+						
 					</div>
 				</div>
 			</div>
@@ -681,6 +568,9 @@
 			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+		<script src="./soundwave.js"></script>
 		<script src="./playlist.js"></script>
 	</body>
 </html>
