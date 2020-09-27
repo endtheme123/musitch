@@ -573,3 +573,20 @@ margin-bottom: 30px;
 
 }
 
+/* scroll ball */
+body::-webkit-scrollbar {
+	width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #f8f8f8; 
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #999; 
+	border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+  }
