@@ -5,6 +5,7 @@ body {
     height: 900px;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 /* top menu */
