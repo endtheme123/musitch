@@ -103,3 +103,23 @@ setInterval(updateProgressValue, 500)
 function changeProgressBar() {
     song.currentTime = progressBar.value
 }
+
+// const btn = document.getElementById('smt')
+// btn.onclick = () => {
+//     Swal.fire({
+//         icon: 'question',
+//         title: 'Enter your name',
+//         input: 'text',
+//         showCancelButton: true,
+//         confirmButtonText: 'Done'
+
+//     })
+// }
+
+
+const dialog = document.querySelector('.dialog-overview');
+const openButton = dialog.nextElementSibling;
+const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+
+openButton.addEventListener('click', () => dialog.show());
+closeButton.addEventListener('click', () => dialog.hide());
