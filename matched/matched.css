@@ -283,13 +283,14 @@ body {
 #main {
     display: flex;
     margin-left: 16%;
-    padding: 80px 70px;
+    padding: 80px 50px;
 }
 
 #playlists-id {
-    width: 68%;
+    width: auto;
     height: 800px;
     overflow: scroll;
+    padding-right: 80px;  
 }
 
 #playlists-id h1{
@@ -343,7 +344,7 @@ body {
     margin-left: 20px;
     border-radius: 15px;
     height: 200px;
-    width: 480px;
+    width: auto;
     overflow: scroll;
 }
 
@@ -417,6 +418,11 @@ body {
     align-items: center;
 }
 
+#users {
+    width: 100%;
+    height: 800px;
+}
+
 #user {
     position: relative;
     text-align: center;
@@ -424,10 +430,10 @@ body {
 
 #user img{
     height: 500px;
-    width: 90%;
+    /* width: 90%; */
     object-fit: cover;
     border-radius: 15px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     
 }
 
@@ -504,3 +510,83 @@ margin-bottom: 30px;
     10px 13px 10px rgba(70, 70, 70, 0.303); 
     transition: .4s;
 }
+
+#playlists-id::-webkit-scrollbar {
+	width: 5px;
+}
+
+
+
+#playlists-id::-webkit-scrollbar-track {
+	background: #f8f8f8;
+}
+
+
+#playlists-id::-webkit-scrollbar-thumb {
+	background:#999;
+	border-radius: 3px;
+}
+
+
+
+#playlists-id::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* width */
+
+.songs::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+
+.songs::-webkit-scrollbar-track {
+	background: #f8f8f8;
+}
+
+/* Handle */
+
+.songs::-webkit-scrollbar-thumb {
+	background:#999;
+	border-radius: 3px;
+}
+
+/* Handle on hover */
+
+.songs::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+
+#users{
+    width:300px;
+    height: auto;
+    margin:0px 20px 0px 20px;
+}
+.slick-slide{
+    /* margin:10px; */
+}
+.slick-slide img{
+    width:100%;
+
+}
+
+/* scroll ball */
+body::-webkit-scrollbar {
+	width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #f8f8f8; 
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #999; 
+	border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+  }
