@@ -381,7 +381,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
     color: white;
-    align-items: center;
+		align-items: center;
+		margin-bottom: 5px;
 }
 
 #others .durationTime {
@@ -395,7 +396,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
     align-items: center;
-    color: rgb(193, 255, 6);
+		color: rgb(193, 255, 6);
+		margin-bottom: 5px;
 }
 
 /* End of music player section */
@@ -539,6 +541,78 @@ body {
 #ppl_info p {
 	font-size: 20px;
 	margin-bottom: 7px !important;
+	margin-top: 0px !important;
 }
 
+#line_2{
+	padding-left: 35px !important;
+	display: flex;
+	margin-top: 10px;
+}
 
+#infor_sex {
+	display: flex;
+	padding-right: 30px;
+
+}
+
+#infor_sex span {
+padding-right: 10px;
+}
+
+#infor_distance {
+	padding-left: 35px !important;
+	display: flex;
+	margin-top: 20px;
+}
+
+#infor_distance input {
+width: 60%;
+}
+
+#infor_distance span {
+	margin-right: 15px;
+	margin-top: 10px;
+}
+
+#infor_hobby {
+	padding-left: 35px !important;
+	margin-top: 20px;
+}
+
+#infor_purpose {
+	padding-left: 35px !important;
+	margin-top: 10px;
+	
+}
+
+#infor_ages {
+	padding-left: 35px !important;
+}
+
+#inputt {
+width: 100%;
+padding: 0px 12px;
+}
+
+.agemm {
+	padding-left: 35px !important;
+	display: flex;
+	flex-direction: row;
+}
+
+.agemm span {
+	font-size: small;
+}
+
+.agemm sl-range {
+	width: 80%;
+}
+
+.dialog-overview {
+	padding-left: 35px !important;
+}
+
+#dialog-1-title {
+	padding-left: 35px !important;
+}

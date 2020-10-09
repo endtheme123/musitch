@@ -4,7 +4,12 @@ var musicList = [
 		Name: "Welcome To The Rubbish Dump",
 		artist: "ばらっげ",
 		songUrl:
+<<<<<<< HEAD
+        "../image/Someone's Satellite - I am, I was/01. Welcome To The Rubbish Dump.mp3",
+        
+=======
 			"../image/Someone's Satellite - I am, I was/01. Welcome To The Rubbish Dump.mp3",
+>>>>>>> e283b075784fe4245c9e41aacafba5c2746946d1
 	},
 	{
 		cover: "../image/Someone's Satellite - I am, I was/cover.jpg",

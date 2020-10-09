@@ -9,6 +9,9 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home_fix.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.19/dist/shoelace/shoelace.css">
+
 </head>
 
 <body>
@@ -153,9 +156,62 @@
             <section>
                 <div id="infor_loc">
                     <div id="ppl_info">
-                        <p>Thông tin người được ghép:</p>
-                        <button id="btn_setting_ppl">Cài đặt</button>
+                        <p>Matched information:</p>
+
+
+                        <sl-dialog label="CÀI ĐẶT CHỈ TIÊU" class="dialog-overview">
+
+                            <div id="infor_ages">
+                                <span> Ages:</span>
+                                <div class="agemm">
+                                    <span>min: </span>
+                                    <sl-range min="12" max="50" step="1">min</sl-range> 
+                                </div>
+
+                                <div class="agemm">
+                                    <span>max: </span>
+                                    <sl-range min="12" max="50" step="1">max</sl-range>
+                                </div>
+                            </div>
+
+                            <div id="line_2">
+                                <div id="infor_sex">
+                                    <span> Gender:   </span>
+                                    <sl-select>
+                                        <sl-menu-item value="option-1">Male</sl-menu-item>
+                                        <sl-menu-item value="option-2">Female</sl-menu-item>
+                                        <sl-menu-item value="option-3">Others</sl-menu-item>
+                                    </sl-select> 
+                                </div>
+                            </div>
+
+                            <div id="infor_hobby">
+                                <span>About hobby: </span>
+                                <sl-checkbox checked>Sing</sl-checkbox>
+                                <sl-checkbox checked>Instruments</sl-checkbox>
+                                <sl-checkbox checked>Editer</sl-checkbox>
+                            </div>
+                            
+
+                            <div id="infor_distance">
+                                <span>Location(km):</span>
+                                <input id="inputt" type="number" placeholder="Distance input">
+                            </div>
+
+                            <div id="infor_purpose">
+                                <span>Purpose using Musitch:</span>  
+                                <sl-tab>Find lover</sl-tab>
+                                <sl-tab>Find friends</sl-tab>
+
+                            </div>
+
+                            <sl-button slot="footer" type="primary">Agree</sl-button>
+                        </sl-dialog>
+
+                        <sl-button>Setting</sl-button>
+                        <!-- <button class="btn btn-danger" id="smt">Click me</button> -->
                     </div>
+
 
 
                     <div class="img_loc_big">
@@ -260,6 +316,7 @@
         </section>
     </section>
 
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
@@ -269,6 +326,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
         </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.19/dist/shoelace/shoelace.esm.js"></script>
+
     <script src="./home.js"></script>
 </body>
 
