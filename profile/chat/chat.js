@@ -184,6 +184,7 @@ function renderProfile(array) {
 		let name = array[i].name;
 		let profileImg = array[i].profileImg;
 		let time = array[i].time;
+		let lastMessage = chatContent[i][chatContent[i].length-1].content;
 
 		profileRender += `<div class="inbox" ">
 		<img class="person-ava-img"
@@ -192,7 +193,7 @@ function renderProfile(array) {
 		<div class="personal-inbox-info">
 				<div class="person-and-message">
 						<p class="person-user-name">${name}</p>
-						<p class="message"> blebleblebleble</p>
+						<p class="message"> ${lastMessage}</p>
 				</div>
 
 				<p class="message-time">${time}</p>
@@ -262,7 +263,7 @@ $(".person-playlist-top-content").html(personRender3);
 		.addEventListener("keypress", function (e) {
 			if (e.key === "Enter") {
 				let inputVal = $("#chatInput").val();
-
+				
 				console.log(inputVal);
 				if (i == a) {
 					chatContent[a].push({
