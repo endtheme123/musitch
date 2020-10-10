@@ -190,8 +190,7 @@ textarea {
 	margin: 20px;
 }
 
-.songIn4 {
-}
+
 
 .songName {
 	margin-top: 5px;
@@ -234,6 +233,7 @@ textarea {
 }
 
 
+
 /* width */
 
 #addInPlaylist::-webkit-scrollbar {
@@ -258,3 +258,4 @@ textarea {
 #addInPlaylist::-webkit-scrollbar-thumb:hover {
 	background: #555;
 }
+

@@ -4,12 +4,7 @@ var musicList = [
 		Name: "Welcome To The Rubbish Dump",
 		artist: "ばらっげ",
 		songUrl:
-<<<<<<< HEAD
-        "../image/Someone's Satellite - I am, I was/01. Welcome To The Rubbish Dump.mp3",
-        
-=======
 			"../image/Someone's Satellite - I am, I was/01. Welcome To The Rubbish Dump.mp3",
->>>>>>> e283b075784fe4245c9e41aacafba5c2746946d1
 	},
 	{
 		cover: "../image/Someone's Satellite - I am, I was/cover.jpg",
@@ -105,7 +100,7 @@ var musicList = [
 	},
 ];
 
-let songs = $("#songs");
+let songs = $(".songs");
 let song = $(".song");
 
 function renderMusic(array) {
@@ -133,13 +128,7 @@ function renderMusic(array) {
 	
 	<div class="subContent">
 	<h6 class="time">4:46</h6>
-		<button class="choose">
-			<input class="inp-cbx" id="cbx" type="checkbox" style="display: none;" />
-			<label class="cbx" for="cbx"><span>
-					<svg width="12px" height="9px" viewbox="0 0 12 9">
-						<polyline points="1 5 4 8 11 1"></polyline>
-					</svg></span><span></span></label>
-		</button>
+		
 	</div>
 	
 	</div>`;
@@ -149,15 +138,3 @@ function renderMusic(array) {
 }
 
 renderMusic(musicList);
-
-$("#search").on("keyup", function (event) {
-	let inputVal = $("#search").val();
-	let value = event.target.value;
-
-	let searchArray = musicList.filter(function (item) {
-		return item.Name.includes(value);
-	});
-
-	renderMusic(searchArray);
-	// console.log(searchArray);
-});

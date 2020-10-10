@@ -9,6 +9,9 @@
 #collaboration {
 	background-color: white;
 	width: 1000px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 #tabs {
 	margin: 20px;
@@ -34,7 +37,9 @@
 		10px 10px 15px rgba(70, 70, 70, 0.178);
 	background-image: url("https://i.pinimg.com/originals/d9/de/11/d9de112b2c4aedef6df31d05194adf21.jpg");
 	background-repeat: none;
-	overflow: hidden;
+	overflow: hidden ;
+	overflow: scroll;
+	
 
 }
 
@@ -45,6 +50,8 @@
 	width: 250px;
 	height: 300px;
 	border-right: 1px solid rgba(206, 205, 205, 0.719);
+	
+	
 	
 }
 .collaboratorIn4 {
@@ -66,12 +73,22 @@
 	margin: 20px;
 }
 
+.subContent {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
+
+
+
 .songs {
 	display: flex;
 	flex-flow: column;
-	width: 600px;
-	margin: 30px;
+	width: 750px;
+	margin-top: 40px;
 	margin-left: 35px;
+	
+	
 }
 
 .song {
@@ -119,6 +136,7 @@
 #collabList {
 	display: flex;
 	flex-flow: column;
+	align-items: center;
 	margin: 20px;
 }
 
