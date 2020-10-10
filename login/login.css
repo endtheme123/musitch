@@ -39,6 +39,14 @@
 	text-decoration: underline;
 }
 
+#chữ3 {
+	margin-top: 15px;
+	color: white;
+	font-size: 10px;
+	font-family: "Nunito", sans-serif;
+	text-decoration: underline;
+}
+
 .buttonĐN {
 	position: relative;
 	overflow: hidden;
@@ -248,4 +256,6 @@
 	border-radius: 50px;
 }
 
-
+span {
+	color: red;
+}
