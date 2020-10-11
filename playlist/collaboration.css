@@ -136,9 +136,9 @@
 	flex-flow: column;
 	
 	width: 250px;
-	height: 300px;
+	height: 700px;
 	border-right: 1px solid rgba(206, 205, 205, 0.719);
-	
+	margin-bottom: -400px;
 	
 	
 }
