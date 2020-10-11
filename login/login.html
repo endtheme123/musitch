@@ -91,13 +91,15 @@
 						</div>
 						<!-- quan trọng!!!!!!!!!!!!!!!!!!!!!! -->
 						<div class="modal-body">
+							<form>
 							<h3 class="modal-body-text">Sign up to Musitch</h3>
 							<div class="information">
-								<div class="infor_content">Full name:</div>
+								<div class="infor_content"><span>(*)</span>Full name:</div>
 								<input
-									id="name"
+									id="nameInput"
 									type="text"
 									placeholder="Enter your full name"
+									required
 								/>
 							</div>
 
@@ -108,20 +110,23 @@
 
 									type="text"
 									placeholder="Username is not over 15 letters"
-									pattern="{15}"
 									autocomplete="on"
+									required
 								/>
 							</div>
+							<p class="errorText hide" id="errorUsername">Input must be shorter than 15 characters</p>
 
 							<div class="information">
 								<div class="infor_content"><span>(*)</span> Email:</div>
 								<input
-									id="email"
+									id="emailInput"
 									type="email"
 									placeholder="Enter your email address"
-								/>
+									required
+								/> 
 							</div>
-
+							<p class="errorText hide" id="errorEmail">please input @gmail.com</p>
+							
 							<div class="information">
 								<div class="infor_content">Phone number:</div>
 								<input
@@ -133,34 +138,38 @@
 
 							<div class="information">
 								<div class="infor_content"><span>(*)</span> Password:</div>
-								<input id="pass" type="password" placeholder="Enter your password" />
+								<input id="passInput" type="password" placeholder="Password must be over 7 inits" required/>
 							</div>
+                            <p class="errorText hide" id="errorPass">Input must be longer than 7 inits</p>
+
 
 							<div class="information">
 								<div class="infor_content"><span>(*)</span> Confirm password:</div>
-								<input type="password" placeholder="Confirm your password" />
+								<input id="passwordInput" type="password" placeholder="Confirm your password" required/>
 							</div>
+							<p class="errorText hide" id="errorPassword">Password is not match</p>
 
 							<div class="information">
 								<div class="infor_content"><span>(*)</span> D.O.B:</div>
-								<input id="birthday" type="date" />
+								<input id="birthday" type="date" required/>
 							</div>
 
 							<div id="sexx" class="information">
 								<div class="infor_content"><span>(*)</span> Gender:</div>
 								<div id="sex">
-									<input type="radio" name="gioitinh" />Female
-									<input type="radio" name="gioitinh" />Male
-									<input type="radio" name="gioitinh" />Others
+									<input type="radio" name="gioitinh" required/>Female
+									<input type="radio" name="gioitinh" required/>Male
+									<input type="radio" name="gioitinh" required/>Others
 								</div>
 							</div>
 
 							<div class="điều_khoản">
-								<input type="checkbox" /> I accept the Term of use
+								<input type="checkbox" required/> I accept the  <span> <a href="">Term of use </a> </span>
 
 							<div id="btn_Đk">
-								<button id="btn_Đk_chữ">Sign up now</button>
+								<button  type="submit" id="btn_Đk_chữ">Sign up now</button>
 							</div>
+							</form>
 						</div>
 					</div>
 				</div>

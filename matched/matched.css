@@ -574,3 +574,13 @@ body::-webkit-scrollbar-thumb:hover {
 .slick-next:before {
 	color: red !important;
 }
+.heartActive {
+	background-color:  rgb(193, 67, 115);
+	
+}
+
+.heartActive svg {
+    fill: #f3f3f3 !important;
+}
+
+

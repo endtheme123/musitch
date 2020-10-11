@@ -274,3 +274,17 @@
 span {
 	color: red;
 }
+
+.hide {
+	display: none;
+}
+
+.errorText {
+	text-align: right;
+	margin-bottom: 0px;
+	margin-right: 15px;
+	font-weight: bold ;
+	font-style: italic;
+	color: red;
+}
+
