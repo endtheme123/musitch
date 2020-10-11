@@ -8,3 +8,8 @@ $(document).ready(function(){
     });
 });
 
+let heartButton =$('#heartButton');
+heartButton.on('click',function(){
+    heartButton.toggleClass('heartActive');
+})
+
